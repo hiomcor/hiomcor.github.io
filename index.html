@@ -5,58 +5,58 @@
 
 <style>
 div#preload { display: none; }
-
   
-body{
-	background-color: #ffc000;
-	background-attachment:fixed;
-	background-repeat: no-repeat;
-	}
-	
-
-html, body, #wrapper {
-   height:100%;
-   width: 100%;
-   margin: 0;
-   padding: 0;
-   border: 0;
-}
-#wrapper td {
-   vertical-align: middle;
-   text-align: center;
+body {
+    height: 100%;
 }
 
-img{ max-width: 50%}
-
-#Library {
-    
+#bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    widht: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #ffc000;
 }
 
-#Library:hover {
-    content: url('CCCredorange.png');
-  
+#trigger {
+    position: absolute;
+    top: 50%;
+   left: 50%;
+   width: 40%;
+   height: auto;
+   margin-top: -9%; 
+   margin-left: -20%; 
+    z-index: 2;
+	content: url('CCC.png');
 }
 
+#trigger:hover{
+	content: url('CCCpink.png');
+}
 
-
+#trigger:hover ~ #bg {
+    background: #00FC83;
+}
 
 </style>
 
 </head>
 
 <body>
+<div id="trigger"></div>
 
+<div id="bg">
+</div>
 
-
-<table id="wrapper">
-  <tr>
-    <td><img src="CCC.png" id="Library"/></td>
-  </tr>
-</table>
 
 </body>
 
 <div id="preload">
    <img src="CCCredorange.png" />
+   <img src="CCCpink.png" />
 </div>
 </html>
