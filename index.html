@@ -4,6 +4,9 @@
 <head>
 
 <style>
+div#preload { display: none; }
+
+  
 body{
 	background-color: #ffc000;
 	background-attachment:fixed;
@@ -24,6 +27,19 @@ html, body, #wrapper {
 }
 
 img{ max-width: 50%}
+
+#Library {
+    
+}
+
+#Library:hover {
+    content: url('CCCredorange.png');
+  
+}
+
+
+
+
 </style>
 
 </head>
@@ -34,10 +50,13 @@ img{ max-width: 50%}
 
 <table id="wrapper">
   <tr>
-    <td><img src="CCC.png" alt="" /></td>
+    <td><img src="CCC.png" id="Library"/></td>
   </tr>
 </table>
 
 </body>
 
+<div id="preload">
+   <img src="CCCredorange.png" />
+</div>
 </html>
