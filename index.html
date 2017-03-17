@@ -16,10 +16,10 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    widht: 100%;
+    width: 100%;
     height: 100%;
     z-index: 1;
-    background: #ffc000;
+    background: #52a9ff;
 }
 
 #trigger {
@@ -31,17 +31,26 @@ body {
    margin-top: -9%; 
    margin-left: -20%; 
     z-index: 2;
-	content: url('CCC.png');
-}
-
-#trigger:hover{
 	content: url('CCCred.png');
 }
 
-#trigger:hover ~ #bg {
-    background: #52a9ff;
+#trigger:hover{
+	content: url('CCC.png');
 }
 
+#trigger:hover ~ #bg {
+    background: #ffc000;
+}
+
+
+background: linear-gradient(
+    to right, 
+    #ff9e2c 0%, 
+    #ff9e2c 50%, 
+    #b6701e 50%, 
+    #b6701e 100%
+	
+	
 </style>
 
 </head>
@@ -52,10 +61,13 @@ body {
 <div id="bg">
 </div>
 
+<div id="box">
+</div>
 
 </body>
 
 <div id="preload">
    <img src="CCCred.png" />
+    <img src="CCC.png" />
 </div>
 </html>
