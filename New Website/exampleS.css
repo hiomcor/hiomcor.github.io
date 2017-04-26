@@ -1,0 +1,225 @@
+body, html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #FAFAFA;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #333333;
+    z-index: 2;
+}
+
+#header_textbox{
+    background-color: #333333;
+    width: 40vw;
+    height: 10vh;
+
+    margin: 0;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Corey{
+    font-family: 'Asar', serif;
+    font-size: 55px;
+    color: #FAFAFA;
+    transition: 0.3s
+}
+
+#textbox{
+    background-color: #CCCCCC;
+    width: 40vw;
+    height: 40vh;
+
+    margin: 0;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0.6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dummytextbox{
+    width: 40vw;
+    height: 40vh;
+
+    margin: 0;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#textbox_text{
+    margin: 5vw;
+    font-size: 1.82vw;
+    color: black;
+    font-family: 'Asar', serif;
+    text-align: center;
+}
+
+img.CLogo {
+    height: 6.5vh;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+img.burger {
+    height: 5vh;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 3vh;
+    transform: translate(0, -50%);
+}
+
+#maccontainer {
+    padding-top: 14vh;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#maccontainer img {
+    margin: 0;
+}
+
+ul{
+    width: 25vw;
+    text-align: center;
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 18vh;
+    margin-left: -1vw;
+    margin-right: 1vw;
+}
+
+li {
+}
+
+.edit{
+    font-size: 1.5vw;
+}
+
+/* The side navigation menu */
+.sidenav {
+    display: block;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 10vh; /* nav bar starts where header finishes */
+    right: 0; /* locked to right side of screen*/
+    background-color: #FAFAFA;
+    overflow: hidden; /* disable horizontal scroll */
+    padding-top: 3vh; /* padding from top */
+    transition: 0.3s; /* transition slide effect*/
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    text-decoration: none;
+    font-family: 'Asar', serif;
+    font-size: 2vw;
+    color: #111111;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #99999;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2vh;
+    font-size: 50px;
+
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .3s;
+}
+
+
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width : 1200px){
+    #textbox_text{font-size: 2vw;}
+}
+
+@media screen and (max-width : 800px){
+    #textbox_text{font-size: 3vw;}
+    #Corey{font-size: 45px;}
+    #header_textbox{width: 320px;}
+    #textbox{width: 320px;}
+    #dummytextbox{width: 320px;}
+    #textbox_text{width: 320px;}
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
