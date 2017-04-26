@@ -1,61 +1,54 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 
 <head>
 
-<style>
-div#preload { display: none; }
-  
-body {
-    height: 100%;
-}
-#bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: #52a9ff;
-}
-#trigger {
-    position: absolute;
-    top: 50%;
-   left: 50%;
-   width: 40%;
-   height: auto;
-   margin-top: -9%; 
-   margin-left: -20%; 
-    z-index: 2;
-	content: url('CCCred.png');
-}
-#trigger:hover{
-	content: url('CCC.png');
-}
-#trigger:hover ~ #bg {
-    background: #ffc000;
-}
-background: linear-gradient(
-    to right, 
-    #ff9e2c 0%, 
-    #ff9e2c 50%, 
-    #b6701e 50%, 
-    #b6701e 100%
-	
-	
-</style>
+    <link rel="stylesheet" type="text/css" href="exampleS.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Asar" rel="stylesheet">
+
+    <script src="burger.js"></script>
+
 </head>
+
 <body>
-<div id="trigger"></div>
-<div id="bg">
-</div>
-<div id="box">
-</div>
+
+    <div id="header">
+        <a href="index.html"><img class="CLogo" src="page1_C.svg"></a>
+        <img class="burger" src="burger.svg" onclick="openNav()">
+
+    </div>
+
+    <div class="fullscreen-bg">
+        <video loop muted autoplay poster="bling_blink.jpg" class="fullscreen-bg__video">
+            <source src="bling_blink.mp4" type="video/mp4">
+            <source src="bling_blink.ogv" type="video/ogg">
+            <source src="bling_blink.webm" type="video/webm">
+        </video>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+
+        <ul>
+            <li><a href="#">example 1</a></li>
+            <li><a href="#">example 2</a></li>
+            <li><a href="#">example 3</a></li>
+            <li><a href="indexW.html"><div class="edit">What does this website look <br> like on different devices?</div></a></li>
+        </ul>
+
+    </div>
+
+    <div id="header_textbox">
+        <div id="Corey"><p>Corey Hiom<p></div>
+    </div>
+
+    <div id="textbox">
+    </div>
+    <div id="dummytextbox">
+        <div id="textbox_text"><p>This is an example website created by me. It contains a few examples of websites that showcase my interests, each in a different style.</p></div>
+    </div>
+
+
 </body>
-<div id="preload">
-   <img src="CCCred.png" />
-    <img src="CCC.png" />
-</div>
+
 </html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+div#preload { display: none; }
+  
+
+* {
+	margin: 0;}
+
+body {
+	overflow:hidden;
+}
+
+div {
+  height: 100%;
+}
+
+.left-half {
+  background-color: #52a9ff;
+  position: absolute;
+  left: 0px;
+  width: 85%;
+}
+
+.right-half {
+  background-color: #b6701e;
+  position: absolute;
+  right: 0px;
+  width: 15%;
+}
+
+<!--  Trigger Start  -->
+#trigger {
+    position: absolute;
+    top: 50%;
+   left: 50%;
+   width: 40%;
+   height: auto;
+   margin-top: -9%; 
+   margin-left: -20%; 
+    z-index: 2;
+	content: url('CCCred.png');
+}
+
+#trigger:hover{
+	content: url('CCCred.png');
+}
+
+#trigger:hover ~ .left-half {
+    background-color: #ffc000;
+}
+
+
+
+img{ max-width:40%;}
+
+img:hover{
+	content: url('CCC.png');
+}
+
+img:hover ~ .left-half {
+    background-color: #ffc000;
+}
+
+
+</style>
+</head>
+
+<body>
+
+  <div class="left-half">
+    
+      <img src="CCCred.png"/>
+    
+  </div>
+  
+  <div class="right-half">
+    
+      <h1>Right Half</h1>
+      <p>If your knees aren't green by the end of the day, you ought to seriously re-examine your life.</p>
+    
+  </div>
+
+</body>
+
+<div id="preload">
+   <img src="CCCred.png" />
+    <img src="CCC.png" />
+</div>
+</html>
