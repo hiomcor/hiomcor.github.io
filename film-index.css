@@ -2,7 +2,7 @@
 
 body {
     /*better background image method, but won't work with jQuery .replaceWith*/
-    background: url(media/2001blur.png) no-repeat center center fixed;
+    background: url(media/media/2001-blur.jpg) no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -104,7 +104,7 @@ position: absolute;
     height: 110px;
     width: 100%;
     background-color: #111111;
-    opacity: 0.8;
+    opacity: 0.7;
     z-index: 0
 }
 

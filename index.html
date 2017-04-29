@@ -52,26 +52,32 @@
 <div class="hidden">
     <script type="text/javascript">
         <!--//--><![CDATA[//><!--
-            var images = new Array()
-            function preload() {
-                for (i = 0; i < preload.arguments.length; i++) {
-                    images[i] = new Image()
-                    images[i].src = preload.arguments[i]
-                }
+
+            if (document.images) {
+                img1 = new Image();
+                img2 = new Image();
+                img3 = new Image();
+                img4 = new Image();
+                img5 = new Image();
+                img6 = new Image();
+                img7 = new Image();
+                img8 = new Image();
+                img9 = new Image();
+                img10 = new Image();
+
+                img1.src = "media/2001-buttonC.png";
+                img2.src = "media/mulholland-buttonCR.png";
+                img3.src = "media/dragon-buttonC.png";
+                img4.src = "media/rope-buttonC.png";
+                img5.src = "media/2001-buttonO.png";
+                img6.src = "media/mulholland-buttonO.png";
+                img7.src = "media/dragon-buttonO.png";
+                img8.src = "media/rope-buttonO.png";
+                img9.src = "media/2001-cover.jpg";
+                img10.src = "media/2001-blur.jpg";
+
             }
-            preload(
-                "media/2001-buttonC.png",
-                "media/mulholland-buttonCR.png",
-                "media/dragon-buttonC.png",
-                "media/rope-buttonC.png",
 
-                "media/media/2001-cover.jpg",
-
-                "media/media/2001blur.jpg",
-
-
-
-            )
         //--><!]]>
     </script>
 </div>
