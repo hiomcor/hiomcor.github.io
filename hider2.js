@@ -14,7 +14,8 @@ The story includes several other seemingly unrelated vignettes that eventually i
 $dragon = $('<div id="textbox"><p><strong>The Girl with the Dragon Tattoo is a 2011 Swedish-American psychological thriller film based on the novel of the same name by Stieg Larsson.\
  This film adaptation was directed by David Fincher.<br><br>\
 It tells the story of journalist Mikael Blomkvist\'s investigation to find out what happened to a woman from a wealthy family who disappeared 40 years prior.\
- He recruits the help of computer hacker Lisbeth Salander.</strong>\
+ He recruits the help of computer hacker Lisbeth Salander.<br><br>\
+ The Girl with the Dragon Tattoo received positive reviews from critics, with particular note to the cast, tone, score and cinematography.</strong>\
 </p></div>')
 
 $rope = $('<div id="textbox"><p><strong>Rope is a 1948 American film noir psychological crime thriller film directed by Alfred Hitchcock,\
@@ -34,7 +35,7 @@ $(document).ready(function() {
             $('.h1-replace').css({"color":"#ffce00"});
             $('.h1-replace').css({"font-size":"3.6rem"});
             $('.h1-replace-colour').css({"background-color":"#111111"});
-            $('img.cover').attr("src", "media/2001-cover.jpg");
+            $('.cover-alt').css({"background-image":"url(media/2001-cover.jpg"});
             $('#textbox').replaceWith($2001);
             $('.container').fadeIn(500);
             $('.opacity-layer').fadeIn(500);
@@ -50,7 +51,7 @@ $(document).ready(function() {
             $('.h1-replace').css({"font-size":"3.2rem"});
             $('.h1-replace').css({"color":"#fafafa"});
             $('.h1-replace-colour').css({"background-color":"#111111"});
-            $('img.cover').attr("src", "media/mulholland-cover.jpg");
+            $('.cover-alt').css({"background-image":"url(media/mulholland-cover.jpg)"});
             $('#textbox').replaceWith($mulholland);
             $('.container').fadeIn(500);
             $('.opacity-layer').fadeIn(500);
@@ -67,7 +68,7 @@ $(document).ready(function() {
             $('.h1-replace').css({"font-size":"3rem"});
             $('.h1-replace').css({"color":"white"});
             $('.h1-replace-colour').css({"background-color":"#111111"});
-            $('img.cover').attr("src", "media/dragon-cover2.jpg");
+            $('.cover-alt').css({"background-image":"url(media/dragon-cover2.jpg"});
             $('#textbox').replaceWith($dragon);
             $('.container').fadeIn(500);
             $('.opacity-layer').fadeIn(500);
@@ -83,7 +84,7 @@ $(document).ready(function() {
             $('.h1-replace').css({"font-size":"3.5rem"});
             $('.h1-replace').css({"color":"#fafafa"});
             $('.h1-replace-colour').css({"background-color":"#111111"});
-            $('img.cover').attr("src", "media/rope-cover.jpg");
+            $('.cover-alt').css({"background-image":"url(media/rope-cover.jpg"});
             $('#textbox').replaceWith($rope);
             $('.container').fadeIn(500);
             $('.opacity-layer').fadeIn(500);

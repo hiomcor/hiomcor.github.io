@@ -106,11 +106,27 @@ img.CLogo {
     height: 40px;
 }
 
-img.cover {
-bottom: 0;
-left: 0;
-position: absolute;
-background-color: #fafafa;
+.cover-alt{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+
+
+    width: 410px;
+    height: 600px;
+    z-index: 5;
+}
+
+.cover-O{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    opacity: 0.7;
+
+    width: 410px;
+    height: 600px;
+    z-index: 4;
 }
 
 #textbox {
