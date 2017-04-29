@@ -279,6 +279,7 @@ li {
 @media screen and (max-width : 550px){
     #footer a {font-size: 5.5vw}
     #footer a.what {font-size: 5vw}
+    #textbox_text{font-size: 5.8vw;}
 }
 
 /*@media screen and (max-width : 1200px){
