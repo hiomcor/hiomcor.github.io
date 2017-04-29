@@ -26,18 +26,6 @@ The original play was said to be inspired by the real-life murder of 14-year-old
 </p></div>')
 
 
-
-$(document).ready(function() {
-    $('.h1-replace').mouseenter(function() {
-        $('.container').fadeTo(500, 0.2);
-        $('.opacity-layer').fadeTo(500, 0);
-    });
-    $('.h1-replace').mouseleave(function() {
-        $('.container').fadeTo(500, 1);
-        $('.opacity-layer').fadeTo(500, 0.2);
-    });
-});
-
 $(document).ready(function() {
 
     $('.button1').click(function() {
@@ -61,7 +49,7 @@ $(document).ready(function() {
         $('.container').fadeOut(500, function() {
             $('.h1-replace').text("MULHOLLAND DRIVE");
             $('.h1-replace').css({"font-size":"4rem"});
-            $('.h1-replace').css({"color":"#ff4729"});
+            $('.h1-replace').css({"color":"#fafafa"});
             $('.h1-replace-colour').css({"background-color":"#111111"});
             $('img.cover').attr("src", "media/mulholland-cover.jpg");
             $('#textbox').replaceWith($mulholland);

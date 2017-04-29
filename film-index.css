@@ -31,8 +31,13 @@ a.home {
     text-align: center;
     line-height: 8vh;
     right: 5vw;
-    color: #FAFAFA;
+    color: #fafafa;
     text-decoration: none;
+    transition: 0.2s;
+}
+
+a.home:hover {
+    color: #c8c8c8;
 }
 
 
