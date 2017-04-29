@@ -60,7 +60,6 @@ $(document).ready(function() {
             $('.container').fadeIn(500);
             $('.opacity-layer').fadeIn(500);
             $('body').css({"background-image":"url(media/mul-blur.jpg)"});
-            //$('body').css({"background":"url(media/2001blur.png) no-repeat center center fixed"});
         });
 
     });
