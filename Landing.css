@@ -209,8 +209,8 @@ li {
     #textbox{width: 90vw;}
     #dummytextbox{width: 90vw;}
     #header_textbox{width: 90vw;}
-    #Corey{font-size: 20vw}
-    #textbox_text{font-size: 10vw;}
+    #Corey{font-size: 9vw}
+    #textbox_text{font-size: 4.5vw;}
 }
 
 /*@media screen and (max-width : 1200px){
