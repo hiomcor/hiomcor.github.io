@@ -106,21 +106,33 @@ img.burger {
     transform: translate(0, -50%);
 }
 
-#maccontainer {
-    width: 200px;
-    padding-top: 14vh;
-    height: auto;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+#dev-container {
+    width: 1400px;
+    height: 750px;
 
-#maccontainer img {
     margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
-ul{
+.mac img{
+    height: 750px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.phone img{
+    height: 750px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+ul {
     width: 25vw;
     text-align: center;
     list-style-type: none;
