@@ -31,6 +31,8 @@ $(document).ready(function() {
     $('.button1').click(function() {
         $('.opacity-layer').fadeOut(500);
         $('.container').fadeOut(500, function() {
+            $('.container').css({"width":"1200px"});
+            $('.opacity-layer').css({"width":"1200px"});
             $('.h1-replace').text("2001: A SPACE ODYSSEY");
             $('.h1-replace').css({"color":"#ffce00"});
             $('.h1-replace').css({"font-size":"3.6rem"});
@@ -47,6 +49,8 @@ $(document).ready(function() {
     $('.button2').click(function() {
         $('.opacity-layer').fadeOut(500);
         $('.container').fadeOut(500, function() {
+            $('.container').css({"width":"1200px"});
+            $('.opacity-layer').css({"width":"1200px"});
             $('.h1-replace').text("MULHOLLAND DRIVE");
             $('.h1-replace').css({"font-size":"3.2rem"});
             $('.h1-replace').css({"color":"#fafafa"});
@@ -64,6 +68,8 @@ $(document).ready(function() {
     $('.button3').click(function() {
         $('.opacity-layer').fadeOut(500);
         $('.container').fadeOut(500, function() {
+            $('.container').css({"width":"1200px"});
+            $('.opacity-layer').css({"width":"1200px"});
             $('.h1-replace').text("THE GIRL WITH THE DRAGON TATTOO");
             $('.h1-replace').css({"font-size":"3rem"});
             $('.h1-replace').css({"color":"white"});
@@ -80,6 +86,8 @@ $(document).ready(function() {
     $('.button4').click(function() {
         $('.opacity-layer').fadeOut(500);
         $('.container').fadeOut(500, function() {
+            $('.container').css({"width":"1200px"});
+            $('.opacity-layer').css({"width":"1200px"});
             $('.h1-replace').text("ROPE");
             $('.h1-replace').css({"font-size":"3.5rem"});
             $('.h1-replace').css({"color":"#fafafa"});
