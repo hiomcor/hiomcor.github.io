@@ -107,8 +107,8 @@ img.burger {
 }
 
 #dev-container {
-    width: 1400px;
-    height: 750px;
+    width: 70vw;
+    height: 75vh;
 
     margin: 0;
     position: absolute;
@@ -119,17 +119,21 @@ img.burger {
 }
 
 .mac img{
-    height: 750px;
+    max-height: 70vh;
+    max-width: 80vw;
     position: absolute;
     top: 0;
     left: 0;
+    transition: 0.3s;
 }
 
 .phone img{
-    height: 750px;
+    max-height: 70vh;
+    max-width: 80vw;
     position: absolute;
     top: 0;
     right: 0;
+    transition: 0.3s;
 }
 
 ul {
@@ -270,6 +274,16 @@ li {
     #header_textbox{top:27%;}
     #dummytextbox{top:52%;}
     #textbox{top:52%;}
+}
+
+@media screen and (max-width : 1250px){
+    .mac img{width: 0;}
+    .phone img{
+    top: 43%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    }
 }
 
 @media screen and (max-width : 960px) and (orientation: landscape){
