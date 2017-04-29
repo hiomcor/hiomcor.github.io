@@ -205,6 +205,12 @@ li {
             transform: translate(-50%, -50%);
 }
 
+@media screen and (orientation: portrait){
+    #textbox{width: 40vw;}
+    #dummytextbox{width: 40vw;}
+    #textbox_text{font-size: 2vw;}
+}
+
 @media screen and (max-width : 1200px){
     #textbox_text{font-size: 2vw;}
 }
