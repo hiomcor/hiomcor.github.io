@@ -51,7 +51,7 @@ $(document).ready(function() {
             $('#textbox').replaceWith($2001);
             $('.container').fadeIn(500);
             $('.opacity-layer').fadeIn(500);
-            $('body').css({"background-image":"url(media/2001blur.png)"});
+            $('body').css({"background-image":"url(media/2001-blur.jpg)"});
         });
 
     });
@@ -63,11 +63,11 @@ $(document).ready(function() {
             $('.h1-replace').css({"font-size":"4rem"});
             $('.h1-replace').css({"color":"#ff4729"});
             $('.h1-replace-colour').css({"background-color":"#111111"});
-            $('img.cover').attr("src", "media/mulholland-cover.png");
+            $('img.cover').attr("src", "media/mulholland-cover.jpg");
             $('#textbox').replaceWith($mulholland);
             $('.container').fadeIn(500);
             $('.opacity-layer').fadeIn(500);
-            $('body').css({"background-image":"url(media/mul-blur2.png)"});
+            $('body').css({"background-image":"url(media/mul-blur.jpg)"});
             //$('body').css({"background":"url(media/2001blur.png) no-repeat center center fixed"});
         });
 
@@ -80,11 +80,11 @@ $(document).ready(function() {
             $('.h1-replace').css({"font-size":"3.2rem"});
             $('.h1-replace').css({"color":"white"});
             $('.h1-replace-colour').css({"background-color":"#111111"});
-            $('img.cover').attr("src", "media/dragon-cover2.png");
+            $('img.cover').attr("src", "media/dragon-cover2.jpg");
             $('#textbox').replaceWith($dragon);
             $('.container').fadeIn(500);
             $('.opacity-layer').fadeIn(500);
-            $('body').css({"background-image":"url(media/dragon-blur.png)"});
+            $('body').css({"background-image":"url(media/dragon-blur.jpg)"});
         });
 
     });
@@ -96,11 +96,11 @@ $(document).ready(function() {
             $('.h1-replace').css({"font-size":"4rem"});
             $('.h1-replace').css({"color":"#fafafa"});
             $('.h1-replace-colour').css({"background-color":"#111111"});
-            $('img.cover').attr("src", "media/rope-cover.png");
+            $('img.cover').attr("src", "media/rope-cover.jpg");
             $('#textbox').replaceWith($rope);
             $('.container').fadeIn(500);
             $('.opacity-layer').fadeIn(500);
-            $('body').css({"background-image":"url(media/rope-blur.png)"});
+            $('body').css({"background-image":"url(media/rope-blur.jpg)"});
         });
 
     });
