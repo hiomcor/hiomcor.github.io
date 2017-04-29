@@ -3,7 +3,7 @@
 body, html{
     overflow-x: hidden;
     overflow-y: hidden;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
 }
 
 #header{
@@ -107,6 +107,7 @@ img.burger {
 }
 
 #maccontainer {
+    width: 200px;
     padding-top: 14vh;
     height: auto;
     width: auto;
@@ -169,7 +170,7 @@ li {
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .offcanvas a:focus{
-    color: #99999;
+    color: #7a7a7a;
 }
 
 /* Position and style the close button (top right corner) */
@@ -197,6 +198,8 @@ li {
     align-items: center;
     justify-content: center;
 
+    text-align: center;
+
     transition: .3s;
 }
 
@@ -211,6 +214,10 @@ li {
 
 #footer a.what {
     font-size: 0;
+}
+
+#footer a:hover {
+    color: #7a7a7a;
 }
 
 .fullscreen-bg {
@@ -245,7 +252,7 @@ li {
     img.burger {height: 0;}
     #footer {height: 120px;}
     #footer a {font-size: 4.5vw}
-    #footer a.what {font-size: 3vw}
+    #footer a.what {font-size: 3.4vw}
     .sidenav {width: 0}
 
     #header_textbox{top:27%;}
