@@ -12,6 +12,7 @@ body, html{
     height: 10vh;
     background-color: #333333;
     z-index: 2;
+    transition: .1s;
 }
 
 #header_textbox{
@@ -29,13 +30,14 @@ body, html{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .1s;
 }
 
 #Corey{
     font-family: 'Asar', serif;
     font-size: 55px;
     color: #FAFAFA;
-    transition: 0.3s
+    transition: 0.1s
 }
 
 #textbox{
@@ -55,6 +57,7 @@ body, html{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .1s;
 }
 
 #dummytextbox{
@@ -71,6 +74,7 @@ body, html{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .1s;
 }
 
 #textbox_text{
@@ -180,7 +184,32 @@ li {
     transition: margin-left .3s;
 }
 
+#footer {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    background-color: #fafafa;
+    height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    transition: .3s;
+}
+
+#footer a {
+    color: #111111;
+    font-family: 'Asar', serif;
+    font-size: 0;
+    text-decoration: none;
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+#footer a.what {
+    font-size: 0;
+}
 
 .fullscreen-bg {
     position: fixed;
@@ -211,9 +240,18 @@ li {
     #header_textbox{width: 90vw;}
     #Corey{font-size: 9vw}
     #textbox_text{font-size: 4.5vw;}
+    img.burger {height: 0;}
+    #footer {height: 120px;}
+    #footer a {font-size: 4.5vw}
+    #footer a.what {font-size: 3vw}
+    .sidenav {width: 0}
+
+    #header_textbox{top:27%;}
+    #dummytextbox{top:52%;}
+    #textbox{top:52%;}
 }
 
-@media screen and (max-width : 960px){
+@media screen and (max-width : 960px) and (orientation: landscape){
     #Corey{font-size: 45px}
 }
 

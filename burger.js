@@ -1,4 +1,5 @@
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+
 function openNav() {
     var Nav = document.getElementById("mySidenav")
     if (Nav.style.width != "25vw") {
@@ -7,6 +8,10 @@ function openNav() {
     else {
         document.getElementById("mySidenav").style.width = "0";
     }
+}
+
+if(window.innerHeight > window.innerWidth){
+    document.getElementById("mySidenav").style.width = "0";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
