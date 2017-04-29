@@ -2,12 +2,11 @@
 
 body {
     /*better background image method, but won't work with jQuery .replaceWith*/
-    background: url(media/media/2001-blur.jpg) no-repeat center center fixed;
+    background: url(media/2001-blur.jpg) no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-
 
       background-color: #FAFAFA;
       transition: background 1s ;
@@ -39,7 +38,6 @@ a.home:hover {
     color: #c8c8c8;
 }
 
-
 img.CLogo {
     height: 5vh;
     margin: 0;
@@ -50,11 +48,6 @@ img.CLogo {
     transform: translate(-50%, -50%)
 }
 
-img.cover {
-bottom: 0;
-left: 0;
-position: absolute;
-}
 
 .container {
     width: 1200px;
@@ -111,6 +104,13 @@ position: absolute;
 .break {
     width: 100%;
     height: 40px;
+}
+
+img.cover {
+bottom: 0;
+left: 0;
+position: absolute;
+background-color: #fafafa;
 }
 
 #textbox {
