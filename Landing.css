@@ -276,6 +276,11 @@ li {
     #Corey{font-size: 45px}
 }
 
+@media screen and (max-width : 550px){
+    #footer a {font-size: 5.5vw}
+    #footer a.what {font-size: 5vw}
+}
+
 /*@media screen and (max-width : 1200px){
     #textbox_text{font-size: 2vw;}
 }
