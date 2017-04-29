@@ -1,14 +1,13 @@
 $2001 = $('<div id="textbox"><p><strong>2001: A Space Odyssey is a 1968 epic science-fiction film produced and directed by Stanley Kubrick.<br><br>\
 The film follows a voyage to Jupiter with the sentient computer Hal after the discovery of a mysterious black monolith affecting human evolution.\
-It deals with the themes of existentialism, human evolution, technology, artificial intelligence, and extraterrestrial life.<br><br>\
+ It deals with the themes of existentialism, human evolution, technology, artificial intelligence, and extraterrestrial life.<br><br>\
 It is noted for its scientifically accurate depiction of space flight, pioneering special effects, and ambiguous imagery.\
  It uses sound and minimal dialogue in place of traditional narrative techniques;\
  the soundtrack consists of classical music such as Gayane Ballet Suite, The Blue Danube, and Also sprach Zarathustra.</strong>\
 </p></div>')
 
 $mulholland = $('<div id="textbox"><p><strong>Mulholland Drive is a 2001 neo-noir mystery film written and directed by David Lynch.<br><br>\
-It tells the story of an aspiring actress named Betty Elms, newly arrived in Los Angeles, who meets and befriends an amnesiac woman hiding in an apartment which belongs to Betty\'s aunt.\
- It deals with the themes of existentialism, human evolution, technology, artificial intelligence, and extraterrestrial life.<br><br>\
+It tells the story of an aspiring actress named Betty Elms, newly arrived in Los Angeles, who meets and befriends an amnesiac woman hiding in an apartment which belongs to Betty\'s aunt.<br><br>\
 The story includes several other seemingly unrelated vignettes that eventually interlock, as well as some surreal and darkly comic scenes and images that relate to the cryptic narrative.</strong>\
 </p></div>')
 
@@ -33,7 +32,7 @@ $(document).ready(function() {
         $('.container').fadeOut(500, function() {
             $('.h1-replace').text("2001: A SPACE ODYSSEY");
             $('.h1-replace').css({"color":"#ffce00"});
-            $('.h1-replace').css({"font-size":"4rem"});
+            $('.h1-replace').css({"font-size":"3.6rem"});
             $('.h1-replace-colour').css({"background-color":"#111111"});
             $('img.cover').attr("src", "media/2001-cover.jpg");
             $('#textbox').replaceWith($2001);
@@ -48,7 +47,7 @@ $(document).ready(function() {
         $('.opacity-layer').fadeOut(500);
         $('.container').fadeOut(500, function() {
             $('.h1-replace').text("MULHOLLAND DRIVE");
-            $('.h1-replace').css({"font-size":"4rem"});
+            $('.h1-replace').css({"font-size":"3.2rem"});
             $('.h1-replace').css({"color":"#fafafa"});
             $('.h1-replace-colour').css({"background-color":"#111111"});
             $('img.cover').attr("src", "media/mulholland-cover.jpg");
@@ -65,7 +64,7 @@ $(document).ready(function() {
         $('.opacity-layer').fadeOut(500);
         $('.container').fadeOut(500, function() {
             $('.h1-replace').text("THE GIRL WITH THE DRAGON TATTOO");
-            $('.h1-replace').css({"font-size":"3.2rem"});
+            $('.h1-replace').css({"font-size":"3rem"});
             $('.h1-replace').css({"color":"white"});
             $('.h1-replace-colour').css({"background-color":"#111111"});
             $('img.cover').attr("src", "media/dragon-cover2.jpg");
@@ -81,7 +80,7 @@ $(document).ready(function() {
         $('.opacity-layer').fadeOut(500);
         $('.container').fadeOut(500, function() {
             $('.h1-replace').text("ROPE");
-            $('.h1-replace').css({"font-size":"4rem"});
+            $('.h1-replace').css({"font-size":"3.5rem"});
             $('.h1-replace').css({"color":"#fafafa"});
             $('.h1-replace-colour').css({"background-color":"#111111"});
             $('img.cover').attr("src", "media/rope-cover.jpg");

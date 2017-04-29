@@ -2,14 +2,13 @@
 
 body {
     /*better background image method, but won't work with jQuery .replaceWith*/
-    /*background: url(media/2001blur.png) no-repeat center center fixed;
+    background: url(media/2001blur.png) no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: cover;*/
-
-
       background-size: cover;
+
+
       background-color: #FAFAFA;
       transition: background 1s ;
 }
@@ -91,7 +90,7 @@ position: absolute;
     text-align: center;
 
     font-family: Nunito Sans;
-    font-size: 4.5rem ;
+    font-size: 4rem ;
     height: 110px;
     color: #fafafa;
     width: 100%;
