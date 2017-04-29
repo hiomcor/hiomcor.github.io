@@ -206,9 +206,9 @@ li {
 }
 
 @media screen and (orientation: portrait){
-    #textbox{width: 40vw;}
-    #dummytextbox{width: 40vw;}
-    #textbox_text{font-size: 2vw;}
+    #textbox{width: 80vw;}
+    #dummytextbox{width: 80vw;}
+    #textbox_text{font-size: 3vw;}
 }
 
 @media screen and (max-width : 1200px){
