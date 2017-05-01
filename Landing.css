@@ -11,7 +11,7 @@ body, html{
     top: 0;
     left: 0;
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     background-color: #333333;
     z-index: 2;
     transition: .1s;
@@ -88,7 +88,7 @@ body, html{
 }
 
 img.CLogo {
-    height: 6.5vh;
+    height: 5vh;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -98,7 +98,7 @@ img.CLogo {
 }
 
 img.burger {
-    height: 5vh;
+    height: 4vh;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -164,7 +164,7 @@ li {
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
-    top: 10vh; /* nav bar starts where header finishes */
+    top: 8vh; /* nav bar starts where header finishes */
     right: 0; /* locked to right side of screen*/
     background-color: #FAFAFA;
     overflow: hidden; /* disable horizontal scroll */
@@ -224,11 +224,15 @@ li {
     font-family: 'Asar', serif;
     font-size: 0;
     text-decoration: none;
-    padding-right: 5vw;
-    padding-left: 5vw;
+    padding-right: 3vw;
+    padding-left: 3vw;
 }
 
 #footer a.what {
+    font-size: 0;
+}
+
+#footer a.time {
     font-size: 0;
 }
 
@@ -267,8 +271,9 @@ li {
     #textbox_text{font-size: 4.5vw;}
     img.burger {height: 0;}
     #footer {height: 120px;}
-    #footer a {font-size: 4.5vw}
-    #footer a.what {font-size: 3.4vw}
+    #footer a {font-size: 4.2vw}
+    #footer a.what {font-size: 3vw}
+    #footer a.time {font-size: 3.4vw}
     .sidenav {width: 0}
 
     #header_textbox{top:27%;}
@@ -292,7 +297,8 @@ li {
 
 @media screen and (max-width : 550px){
     #footer a {font-size: 5.5vw}
-    #footer a.what {font-size: 5vw}
+    #footer a.what {font-size: 3.5vw}
+    #footer a.time {font-size: 3.8vw}
     #textbox_text{font-size: 5.8vw;}
 }
 
