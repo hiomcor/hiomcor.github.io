@@ -330,6 +330,9 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .content .body .column1 .quote-paragraph .text{
+    max-width: 650px;
+  }
 
   .content .body .column1 .quote-paragraph .quote {
     -webkit-box-ordinal-group: 0;
