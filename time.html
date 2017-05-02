@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <title>Whats the time?</title>
-    
+
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="time.css">
@@ -27,12 +27,12 @@
         <script type="text/javascript">
             function GetClock(){
             var d=new Date();
-            var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+            var hour= d.getHours(), min=d.getMinutes(), sec=d.getSeconds();
 
-            if(nmin<=9) nmin="0"+nmin;
-            if(nsec<=9) nsec="0"+nsec;
+            if(min<=9) min= "0" + min;
+            if(sec<=9) sec= "0" + sec;
 
-            document.getElementById('clock').innerHTML=''+nhour+':'+nmin+':'+nsec+'';
+            document.getElementById('clock').innerHTML=''+hour+':'+min+':'+sec+'';
 
             }
 
