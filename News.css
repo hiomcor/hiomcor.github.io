@@ -54,6 +54,8 @@ header .container .nav {
       justify-content: space-around;
 }
 header .container .nav a {
+  color: white;
+  text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -61,6 +63,8 @@ header .container .nav a {
   margin: 0px 10px 0px 0px;
   -webkit-transition: .3s;
   transition: .3s;
+  cursor: pointer;
+  cursor: hand;
 }
 header .container .nav a:hover {
   color: black;
@@ -102,6 +106,8 @@ header .container .nav a:hover {
           align-items: center;
   height: 50px;
   margin: 30px 0px 0px 0px;
+  cursor: pointer;
+  cursor: hand;
 }
 .content .titlebar .tags .break {
     width: 560px;

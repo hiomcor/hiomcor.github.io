@@ -104,6 +104,8 @@ img.burger {
     top: 50%;
     right: 3vh;
     transform: translate(0, -50%);
+    cursor: pointer;
+    cursor: hand;
 }
 
 #dev-container {
@@ -157,25 +159,26 @@ li {
     font-size: 1.5vw;
 }
 
-/* The side navigation menu */
+
 .sidenav {
     display: block;
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 8vh; /* nav bar starts where header finishes */
-    right: 0; /* locked to right side of screen*/
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 8vh;
+    right: 0;
     background-color: #FAFAFA;
-    overflow: hidden; /* disable horizontal scroll */
-    padding-top: 3vh; /* padding from top */
-    transition: 0.3s; /* transition slide effect*/
+    overflow: hidden;
+    padding-top: 3vh;
+    transition: 0.3s;
+
 }
 
-/* The navigation menu links */
+
 .sidenav a {
-    padding-top: 3vw;
-    padding-bottom: 3vw;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
     text-decoration: none;
     font-family: 'Asar', serif;
     font-size: 2vw;
@@ -213,13 +216,12 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-
     text-align: center;
-
     transition: .3s;
 }
 
 #footer a {
+    line-height: 5.5vw;
     color: #111111;
     font-family: 'Asar', serif;
     font-size: 0;
@@ -279,6 +281,8 @@ li {
     #header_textbox{top:27%;}
     #dummytextbox{top:52%;}
     #textbox{top:52%;}
+
+    /*#mySidenav{width:0;}*/
 }
 
 @media screen and (max-width : 1250px){
