@@ -1,0 +1,228 @@
+:root {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  background-color: green;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+
+.ui-bar {
+  width: 27rem;
+  height: 2.5rem;
+  background-color: #fefefe;
+  display: flex;
+  box-shadow: 0rem 0.4rem 2rem rgba(34, 34, 34, 0.3); }
+  .ui-bar .inputs {
+    position: relative;
+    left: 0;
+    width: 22rem;
+    height: inherit;
+    display: flex;
+    justify-content: space-between; }
+    .ui-bar .inputs .location {
+      width: 12rem;
+      display: flex;
+      flex-direction: column;
+      border-right: solid 0.03rem rgba(0, 0, 0, 0.1); }
+      .ui-bar .inputs .location input {
+        width: 10.5rem;
+        border: none;
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: #3A3939; }
+      .ui-bar .inputs .location input:hover {
+        background-color: inherit; }
+      .ui-bar .inputs .location input:focus {
+        background-color: inherit;
+        border: none;
+        outline: none; }
+    .ui-bar .inputs .location:hover {
+      background-color: rgba(0, 0, 0, 0.08); }
+    .ui-bar .inputs .arriving {
+      width: 5rem;
+      border-right: solid 0.03rem rgba(0, 0, 0, 0.1); }
+    .ui-bar .inputs .arriving:hover {
+      background-color: rgba(0, 0, 0, 0.08); }
+    .ui-bar .inputs .leaving {
+      width: 5rem;
+      border-right: solid 0.03rem rgba(0, 0, 0, 0.1); }
+    .ui-bar .inputs .leaving:hover {
+      background-color: rgba(0, 0, 0, 0.08); }
+  .ui-bar .search {
+    position: relative;
+    right: 0;
+    width: 5rem;
+    height: 100%;
+    background-color: #3a3939;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .ui-bar .search .search-text {
+      font-size: 0.7rem;
+      font-weight: 400;
+      color: #fefefe; }
+  .ui-bar .search:hover {
+    background-color: rgba(58, 57, 57, 0.5); }
+
+.ui-bar:hover {
+  cursor: pointer;
+  cursor: hand; }
+
+.drop-menu {
+  position: relative;
+  width: 27rem;
+  height: 8rem;
+  margin: 0.5rem;
+  z-index: 5; }
+  .drop-menu .drop-location {
+    position: absolute;
+    display: none;
+    width: 12rem;
+    height: 10rem;
+    background-color: #fefefe;
+    box-shadow: 0rem 0.4rem 2rem rgba(34, 34, 34, 0.3);
+    flex-direction: column;
+    justify-content: space-between; }
+    .drop-menu .drop-location #search-location-one {
+      border-bottom: solid 0.03rem rgba(0, 0, 0, 0.1); }
+    .drop-menu .drop-location #search-location-two {
+      border-bottom: solid 0.03rem rgba(0, 0, 0, 0.1); }
+  .drop-menu .drop-arriving {
+    position: absolute;
+    display: none;
+    margin-left: 9.5rem;
+    width: 10rem;
+    height: 8rem;
+    background-color: #fefefe;
+    box-shadow: 0rem 0.4rem 2rem rgba(34, 34, 34, 0.3); }
+  .drop-menu .drop-leaving {
+    position: absolute;
+    display: none;
+    margin-left: 14.5rem;
+    width: 10rem;
+    height: 8rem;
+    background-color: #fefefe;
+    box-shadow: 0rem 0.4rem 2rem rgba(34, 34, 34, 0.3); }
+
+.calender {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .calender .month {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.1rem;
+    width: inherit;
+    border-bottom: solid 0.03rem rgba(0, 0, 0, 0.1);
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #fefefe;
+    background-color: #3A3939; }
+    .calender .month i {
+      font-size: 0.62rem;
+      margin: 0 3.5rem;
+      cursor: pointer; }
+  .calender .days {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin: 0.5rem 0.4rem; }
+    .calender .days .days-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .calender .days .days-column ul {
+        width: 100%;
+        list-style: none;
+        font-size: 0.6rem;
+        padding: 0.25rem;
+        text-align: center; }
+        .calender .days .days-column ul li {
+          text-align: center;
+          width: 0.8rem; }
+        .calender .days .days-column ul li:nth-child(1) {
+          font-size: 0.5rem;
+          font-weight: 700;
+          margin-bottom: 0.3rem; }
+
+.calender-over {
+  background-color: rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  cursor: hand; }
+
+.calender-over:hover {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.calender-default {
+  background-color: #fefefe;
+  cursor: pointer;
+  cursor: hand; }
+
+.calender-default:hover {
+  background-color: #EFAB3B; }
+
+.search-location {
+  width: 100%;
+  height: 100%;
+  color: #3A3939;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  cursor: pointer;
+  cursor: hand; }
+
+.search-location:hover {
+  background-color: rgba(0, 0, 0, 0.08); }
+
+.search-img {
+  width: 5rem;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.08);
+  overflow: hidden; }
+  .search-img img {
+    width: 5rem;
+    height: inherit; }
+
+.search-desc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 0.5rem; }
+  .search-desc h1 {
+    font-size: 0.5rem;
+    margin: 0.3rem 0 0 0;
+    font-weight: 600; }
+  .search-desc p {
+    font-size: 0.5rem;
+    margin: 0 0 0.3rem 0; }
+
+.input-title {
+  margin: 0.45rem 0.25rem 0 1.2rem;
+  font-size: 0.5rem;
+  font-weight: 400;
+  color: #888; }
+
+.input-main {
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 0.45rem 1.2rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #3A3939; }
+
+/*# sourceMappingURL=yellow.css.map */

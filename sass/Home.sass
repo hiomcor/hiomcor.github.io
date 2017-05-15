@@ -1,0 +1,459 @@
+$vid-text: #444
+$news-text: #444
+
+html
+    text-rendering: optimizeLegibility
+
+body
+    overflow-x: hidden
+    font-family: 'museo-sans', sans-serif
+    font-weight: 300
+
+a
+    text-decoration: none
+
+.contain
+    display: flex
+    justify-content: center
+    align-items: center
+
+.sidebar
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    position: fixed
+    top: 0
+    left: 0
+    height: 100%
+    width: 280px
+    padding: 30px 0
+    background:
+        color: #222
+    z-index: 100
+    // .dot
+    //     display: fixed
+    //     position: absolute
+    //     width: 10px
+    //     height: 10px
+    //     background:
+    //         color: #F7F3EA
+    //     right: 0
+    //     margin: 0 25px
+    //     transform: translate(0, 76px)
+    //     transition: 0.2s
+
+    .logo
+        position: absolute
+        top: 0
+        display: block
+        width: 130px
+        height: 130px
+        margin: 50px 0
+        background:
+            image: url('../media/logo.svg')
+            repeat: no-repeat
+
+    .nav-container
+        margin-top: 140px
+        display: flex
+        align-items: center
+        text-align: right
+        flex-direction: column
+        ul
+            width: inherit
+            margin: 50px
+            list-style-type: none
+            padding: 0
+            line-height: 60px
+
+        li
+            a
+                color: #F7F3EA
+                font-size: 30px
+                transition: .2s
+            a:hover
+                opacity: 0.5
+                transition: .2s
+
+.content
+    position: absolute
+    top: 0
+    right: 0
+    width: calc(100% - 280px)
+    height: auto
+    background:
+        color: red
+    display: flex
+    justify-content: flex-start
+    flex-direction: column
+
+    #intro
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        height: 400px
+        // background: linear-gradient(135deg,#207ce5,#12599b)
+        background-color: #F7F3EA
+        overflow: hidden
+        z-index: 0
+        position: relative
+        text-align: center
+        p
+            width: 900px
+            font-size: 36px
+            font-weight: 100
+            line-height: 50px
+            color: #555
+
+    #travel
+        width: 100%
+        height: 900px
+        // background: linear-gradient(45deg, #EFAB3B, #D99B36)
+        background-color: #EFAB3B
+        overflow: hidden
+        z-index: 0
+        position: relative
+        display: flex
+        flex-direction: row-reverse
+        .words-container
+            margin-right: 30px
+            .title
+
+            p
+                background-color: #fefefe
+                border: none
+                box-shadow: 0rem .4rem 2rem rgba(34, 34, 34, .3)
+            a
+                background-color: #fefefe
+                border: none
+                box-shadow: 0rem .4rem 2rem rgba(34, 34, 34, .3)
+            a:hover
+                color: #fefefe
+                background-color: #3A3939
+                border: none
+
+        .web-container
+            width: 880px
+            height: 100%
+            display: flex
+            flex-direction: column
+            flex-shrink: 0
+
+            img
+                position: absolute
+                top: 260px
+                left: 0
+                width: 800px
+                // box-shadow: 0 12px 60px rgba(34, 34, 34, .3)
+                margin-left: 50px
+    #video
+        width: 100%
+        height: 900px
+        background: linear-gradient(-30deg,#fd746c,#ff9068)
+        overflow: hidden
+        z-index: 0
+        position: relative
+        display: flex
+        flex-direction: row
+        justify-content: center
+        .words-container
+            margin-left: 30px
+            .title
+
+            p
+
+            a
+
+            a:hover
+                color: #ff9068
+
+        .web-container
+            width: 880px
+            height: 100%
+            display: flex
+            flex-direction: column
+            flex-shrink: 0
+
+            .hider
+                position: absolute
+                right: 0
+                bottom: 0
+                width: 800px
+                margin-right: 50px
+                height: 850px
+                overflow: hidden
+                box-shadow: 0 0 30px 0 rgba(0,0,0,.4)
+                img
+                    position: absolute
+                    right: 0
+
+
+                .left
+                    position: absolute
+                    left: 0px
+
+
+                .right
+                    position: absolute
+                    right: 0
+                    top: 55px
+
+
+
+    #news
+        width: 100%
+        height: 900px
+        background-color: #F7F3EA
+        overflow: hidden
+        z-index: 0
+        position: relative
+        display: flex
+        flex-direction: row-reverse
+        .words-container
+            margin-right: 30px
+            .title
+
+            p
+
+            a
+
+            a:hover
+                color: #F7F3EA
+
+        .web-container
+            width: 880px
+            height: 100%
+            display: flex
+            flex-direction: column
+            flex-shrink: 0
+
+            img
+                position: absolute
+                top: 50px
+                left: 0
+                width: 800px
+                box-shadow: 0 0 30px 0 rgba(0,0,0,.4)
+                margin-left: 50px
+
+    #films
+        width: 100%
+        height: 900px
+        background:
+            image: url(../media/ep_naturalblack.png)
+            attachment: fixed
+        overflow: hidden
+        z-index: 0
+        position: relative
+        display: flex
+        flex-direction: row
+        .words-container
+            margin-left: 30px
+            .title
+                color: #F7F3EA
+            p
+                color: #F7F3EA
+                border: solid #F7F3EA 2px
+            a
+                color: #F7F3EA
+                border: solid #F7F3EA 2px
+            a:hover
+                border: solid #F7F3EA 2px
+                background-color: #F7F3EA
+                color: #060b15
+                transition: .2s
+
+        .web-container
+            width: 880px
+            height: 100%
+            display: flex
+            flex-direction: column
+            flex-shrink: 0
+            img
+                position: absolute
+                top: 145px
+                right: 0
+                width: 800px
+                box-shadow: 0 0 30px 0 rgba(255,255,255,.4)
+                margin-right: 50px
+
+    #time
+        width: 100%
+        height: 900px
+        background-color: #F7F3EA
+        overflow: hidden
+        z-index: 0
+        position: relative
+        display: flex
+        flex-direction: row-reverse
+        .words-container
+            margin-right: 30px
+            .title
+
+            p
+
+            a
+
+            a:hover
+                color: #fefefe
+
+        .web-container
+            width: 880px
+            height: 100%
+            display: flex
+            flex-direction: column
+            flex-shrink: 0
+
+            img
+                position: absolute
+                top: 50px
+                left: 0
+                width: 800px
+                box-shadow: 0 0 30px 0 rgba(0,0,0,.4)
+                margin-left: 50px
+
+
+    #footer
+        width: 100%
+        height: 150px
+        background-color: #222
+        position: relative
+
+        .color-container
+            position: absolute
+            left: 0
+            bottom: 0
+            height: 100%
+            width: 100px
+            display: flex
+            .red
+                background-color: #FFEAD0
+                width: 20%
+                height: inherit
+            .orange
+                background-color: #F76F8E
+                width: 20%
+                height: inherit
+            .yellow
+                background-color: #96616B
+                width: 20%
+                height: inherit
+            .cyan
+                background-color: #37505C
+                width: 20%
+                height: inherit
+            .purple
+                background-color: #113537
+                width: 20%
+                height: inherit
+        p
+            position: absolute
+            right: 30px
+            bottom: 30px
+            color: #fafafa
+            font-size: 20px
+            font-weight: 100
+
+.words-container
+    margin-right: 30px
+    height: 100%
+    width: 620px
+    display: flex
+    flex-shrink: 1
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+
+    .title
+        text-align: center
+        margin-top: 150px
+        font-size: 60px
+        font-weight: 500
+        color: $vid-text
+
+    p
+        max-width: 480px
+        font-size: 24px
+        font-weight: 300
+        line-height: 40px
+        color: $vid-text
+        border: solid $vid-text 2px
+        padding: 15px
+
+    a
+        max-width: 400px
+        margin-bottom: 150px
+        text-align: center
+        font-size: 32px
+        font-weight: 300
+        color: $vid-text
+        border: solid $vid-text 2px
+        padding: 15px
+        transition: .2s
+        cursor: pointer
+        cursor: hand
+    a:hover
+        border: solid $vid-text 2px
+        color: #6CFDA4
+        background-color: $vid-text
+        transition: .2s
+
+@media (max-width: 1520px)
+    .content
+        #travel
+            .web-container
+                width: 680px
+                img
+                    width: 600px
+        #video
+            .web-container
+                width: 580px
+                .hider
+                    width: 500px
+                    height: 850px
+
+                    img
+                        position: absolute
+                        right: 0
+
+
+                    .left
+                        position: absolute
+                        left: 0px
+
+
+                    .right
+                        position: absolute
+                        right: 0
+                        top: 55px
+        #news
+            .web-container
+                width: 580px
+                img
+                    width: 500px
+        #films
+            .web-container
+                width: 600px
+                img
+                    width: 520px
+        #time
+            .web-container
+                width: 580px
+                img
+                    width: 500px
+
+@media (max-width: 775px)
+    .sidebar
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        position: fixed
+        top: 0
+        left: 0
+        height: 100px
+        width: 100%
+        padding: 30px 0
+        background:
+            color: #fafafa

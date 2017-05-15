@@ -1,6 +1,6 @@
 body {
     /*better background image method, but won't work with jQuery .replaceWith*/
-    background: url(media/2001-blur.jpg) no-repeat center center fixed;
+    background: url(../media/2001-blur.jpg) no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -161,7 +161,7 @@ img.CLogo {
     width: 172.5px;
     height: 110px;
 
-    background-image: url(media/2001-buttonC.png);
+    background-image: url(../media/2001-buttonC.png);
     transition: background 0.5s ;
 
     right: 577.5px;
@@ -173,7 +173,7 @@ img.CLogo {
     width: 172.5px;
     height: 110px;
 
-    background-image: url(media/mulholland-buttonCR.png);
+    background-image: url(../media/mulholland-buttonCR.png);
     transition: background 0.5s ;
 
     right: 385px;
@@ -185,7 +185,7 @@ img.CLogo {
     width: 172.5px;
     height: 110px;
 
-    background-image: url(media/dragon-buttonC.png);
+    background-image: url(../media/dragon-buttonC.png);
     transition: background 0.5s ;
 
     right: 192.5px;
@@ -197,7 +197,7 @@ img.CLogo {
     width: 172.5px;
     height: 110px;
 
-    background-image: url(media/rope-buttonC.png);
+    background-image: url(../media/rope-buttonC.png);
     transition: background 0.5s ;
 
     right: 0px;

@@ -62,7 +62,7 @@ header {
       position: absolute;
       left: 164px;
       top: 24px;
-      background-image: url(media/atto.svg);
+      background-image: url(../media/atto.svg);
       background-repeat: no-repeat;
       z-index: 100; }
   header .searchbar {

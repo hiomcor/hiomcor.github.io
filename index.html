@@ -1,102 +1,112 @@
 <!DOCTYPE HTML>
 <html>
-
-<head lang="en">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
-
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/Home.css">
 
     <title>Corey Hiom</title>
-
-    <link rel="stylesheet" type="text/css" href="Landing.css">
-
 </head>
-
 <body>
+    <div class="contain"></div>
+        <div class="sidebar">
+            <div class="logo"></div>
+            <div class="nav-container">
+                <div class="dot"></div>
+                <ul>
+                    <li><a id="nav-intro" href="#intro">Intro</a></li>
+                    <li><a id="nav-travel" href="#travel">Travel UI</a></li>
+                    <li><a id="nav-video" href="#video">Video</a></li>
+                    <li><a id="nav-news" href="#news">News</a></li>
+                    <li><a id="nav-films" href="#films">Films</a></li>
+                    <li><a id="nav-time" href="#time">Time</a></li>
+                    <!-- <li><a id="nav-scroll" href="#scroll"></a></li> -->
+                </ul>
+            </div>
+        </div>
 
-    <div id="header">
-        <a href="index.html"><img class="CLogo" src="media/page1_C.svg"></a>
-        <img class="burger" src="media/burger.svg" onclick="openNav()" alt="menu">
-    </div>
+        <div class="content">
+            <div id="intro"><p>Hi, I'm Corey, and this is my website.<br>
+                Here I showcase some of my capabilities with HTML, CSS and Javascript, as well as my creative skills.
+
+            </div>
+            <div id="travel">
+                <div class="words-container">
+                    <div class="title">Travel Website UI</div>
+                    <p>This UI makes extensive use of jQuery to create responsive menus and input fields.</p>
+                    <a href="Travel-UI/yellow.html">Click here to view website</a>
+                </div>
+                <div class="web-container">
+                    <img src="Screenshots/travel-ui.png" alt="Travel UI Screenshot">
+                </div>
+            </div>
+            <div id="video">
+                <div class="words-container">
+                    <div class="title">Video Website</div>
+                    <p>This website was inspired by video sharing services. It uses flexbox and jQuery throughout to create a responsive and engaging experience.</p>
+                    <a href="video/Video-Site.html">Click here to view website</a>
+                </div>
+
+                <div class="web-container">
+                    <div class="hider">
+                        <img src="Screenshots/atto-left-800.png" class="left" alt="Video Website Screenshot">
+                        <img src="Screenshots/atto-right-800.png" class="right" alt="Video Website Screenshot">
+                        <img src="Screenshots/atto-top-right-800.png" alt="Video Website Screenshot">
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="news">
+                <div class="words-container">
+                    <div class="title">News Website</div>
+                    <!-- <p>This website was inspired by video sharing services. It uses flexbox and jQuery throughout to create a responsive and engaging experience.</p> -->
+                    <a href="news/News.html">Click here to view website</a>
+                </div>
+                <div class="web-container">
+                    <img src="Screenshots/news.png" alt="News Website Screenshot">
+                </div>
+            </div>
+
+            <div id="films">
+                <div class="words-container">
+                    <div class="title">Films</div>
+                    <!-- <p>This website was inspired by video sharing services. It uses flexbox and jQuery throughout to create a responsive and engaging experience.</p> -->
+                    <a href="film/film-index.html">Click here to view website</a>
+                </div>
+                <div class="web-container">
+                    <img src="Screenshots/films.png" alt="Films Website Screenshot">
+                </div>
+            </div>
+            <div id="time">
+                <div class="words-container">
+                    <div class="title">What's the time?</div>
+                    <!-- <p>This website was inspired by video sharing services. It uses flexbox and jQuery throughout to create a responsive and engaging experience.</p> -->
+                    <a href="time/time.html">Click here to view website</a>
+                </div>
+                <div class="web-container">
+                    <img src="Screenshots/time.png" alt="News Website Screenshot">
+                </div>
+            </div>
+            <div id="footer">
+                <div class="color-container">
+                    <div class="def red"></div>
+                    <div class="def orange"></div>
+                    <div class="def yellow"></div>
+                    <div class="def cyan"></div>
+                    <div class="def purple"></div>
+                </div>
+                <p>created by Corey Hiom</p>
+            </div>
 
 
-    <div class="fullscreen-bg">
-        <video loop muted autoplay poster="media/bling_blink.jpg" class="fullscreen-bg__video">
-            <source src="media/bling_blink.mp4" type="video/mp4">
-            <source src="media/bling_blink.ogv" type="video/ogg">
-            <source src="media/bling_blink.webm" type="video/webm">
-        </video>
-    </div>
+        </div>
 
-
-    <div id="mySidenav" class="sidenav">
-        <ul>
-            <li><a href="News.html">News</a></li>
-            <li><a href="Video-Site.html">Video Site</a></li>
-            <li><a href="film-index.html">Films</a></li>
-            <li><a href="time.html">What's the time?</a></li>
-            <li><a href="devices.html">Responsive</a></li>
-        </ul>
-    </div>
-
-
-    <div id="header_textbox">
-        <div id="Corey"><p>Corey Hiom<p></div>
-    </div>
-    <div id="textbox"></div>
-    <div id="dummytextbox">
-        <div id="textbox_text"><p>Welcome to my website.<br>Here I showcase some of my skills with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, as well as my creative skills.</p></div>
-    </div>
-
-
-    <div id="footer">
-        <a href="News.html">News</a><a href="Video-Site.html">Video Site</a><a href="film-index.html">Films</a><a href="time.html" class="time">What's the time?</a><a href="devices.html" class="what">Responsive</a>
-    </div>
-
-
-<script src="burger.js"></script>
-
-<div class="hidden">
-    <script type="text/javascript">
-        <!--//--><![CDATA[//><!--
-
-            if (document.images) {
-                img1 = new Image();
-                img2 = new Image();
-                img3 = new Image();
-                img4 = new Image();
-                img5 = new Image();
-                img6 = new Image();
-                img7 = new Image();
-                img8 = new Image();
-                img9 = new Image();
-                img10 = new Image();
-                img11 = new Image();
-                img12 = new Image();
-
-                img1.src = "media/2001-buttonC.png";
-                img2.src = "media/mulholland-buttonCR.png";
-                img3.src = "media/dragon-buttonC.png";
-                img4.src = "media/rope-buttonC.png";
-                img5.src = "media/2001-buttonO.png";
-                img6.src = "media/mulholland-buttonO.png";
-                img7.src = "media/dragon-buttonO.png";
-                img8.src = "media/rope-buttonO.png";
-                img9.src = "media/2001-cover.jpg";
-                img10.src = "media/2001-blur.jpg";
-                img11.src = "media/iphone.png";
-                img12.src = "media/mac.png";
-
-            }
-
-        //--><!]]>
-    </script>
-</div>
+<script src="https://use.typekit.net/vht7jqh.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="jquery-3.2.1.min.js"></script>
+<script src="home.js"></script>
 </body>
-
 </html>

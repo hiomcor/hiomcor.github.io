@@ -37,11 +37,11 @@ $(document).ready(function() {
             $('.h1-replace').css({"color":"#ffce00"});
             $('.h1-replace').css({"font-size":"3.6rem"});
             $('.h1-replace-colour').css({"background-color":"#111111"});
-            $('.cover-alt').css({"background-image":"url(media/2001-cover.jpg"});
+            $('.cover-alt').css({"background-image":"url(../media/2001-cover.jpg"});
             $('#textbox').replaceWith($2001);
             $('.container').fadeIn(500);
             $('.opacity-layer').fadeIn(500);
-            $('body').css({"background-image":"url(media/2001-blur.jpg)"});
+            $('body').css({"background-image":"url(../media/2001-blur.jpg)"});
         });
 
     });
@@ -55,11 +55,11 @@ $(document).ready(function() {
             $('.h1-replace').css({"font-size":"3.2rem"});
             $('.h1-replace').css({"color":"#fafafa"});
             $('.h1-replace-colour').css({"background-color":"#111111"});
-            $('.cover-alt').css({"background-image":"url(media/mulholland-cover.jpg)"});
+            $('.cover-alt').css({"background-image":"url(../media/mulholland-cover.jpg)"});
             $('#textbox').replaceWith($mulholland);
             $('.container').fadeIn(500);
             $('.opacity-layer').fadeIn(500);
-            $('body').css({"background-image":"url(media/mul-blur.jpg)"});
+            $('body').css({"background-image":"url(../media/mul-blur.jpg)"});
         });
 
     });
@@ -73,11 +73,11 @@ $(document).ready(function() {
             $('.h1-replace').css({"font-size":"3rem"});
             $('.h1-replace').css({"color":"white"});
             $('.h1-replace-colour').css({"background-color":"#111111"});
-            $('.cover-alt').css({"background-image":"url(media/dragon-cover2.jpg"});
+            $('.cover-alt').css({"background-image":"url(../media/dragon-cover2.jpg"});
             $('#textbox').replaceWith($dragon);
             $('.container').fadeIn(500);
             $('.opacity-layer').fadeIn(500);
-            $('body').css({"background-image":"url(media/dragon-blur.jpg)"});
+            $('body').css({"background-image":"url(../media/dragon-blur.jpg)"});
         });
 
     });
@@ -91,11 +91,11 @@ $(document).ready(function() {
             $('.h1-replace').css({"font-size":"3.5rem"});
             $('.h1-replace').css({"color":"#fafafa"});
             $('.h1-replace-colour').css({"background-color":"#111111"});
-            $('.cover-alt').css({"background-image":"url(media/rope-cover.jpg"});
+            $('.cover-alt').css({"background-image":"url(../media/rope-cover.jpg"});
             $('#textbox').replaceWith($rope);
             $('.container').fadeIn(500);
             $('.opacity-layer').fadeIn(500);
-            $('body').css({"background-image":"url(media/rope-blur.jpg)"});
+            $('body').css({"background-image":"url(../media/rope-blur.jpg)"});
         });
 
     });
@@ -104,30 +104,30 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('.button1').mouseenter(function() {
-        $('.button1').css({"background-image":"url(media/2001-buttonO.png)"});
+        $('.button1').css({"background-image":"url(../media/2001-buttonO.png)"});
     });
     $('.button1').mouseleave(function() {
-        $('.button1').css({"background-image":"url(media/2001-buttonC.png)"});
+        $('.button1').css({"background-image":"url(../media/2001-buttonC.png)"});
     });
 
     $('.button2').mouseenter(function() {
-        $('.button2').css({"background-image":"url(media/mulholland-buttonO.png)"});
+        $('.button2').css({"background-image":"url(../media/mulholland-buttonO.png)"});
     });
     $('.button2').mouseleave(function() {
-        $('.button2').css({"background-image":"url(media/mulholland-buttonCR.png)"});
+        $('.button2').css({"background-image":"url(../media/mulholland-buttonCR.png)"});
     });
 
     $('.button3').mouseenter(function() {
-        $('.button3').css({"background-image":"url(media/dragon-buttonO.png)"});
+        $('.button3').css({"background-image":"url(../media/dragon-buttonO.png)"});
     });
     $('.button3').mouseleave(function() {
-        $('.button3').css({"background-image":"url(media/dragon-buttonC.png)"});
+        $('.button3').css({"background-image":"url(../media/dragon-buttonC.png)"});
     });
 
     $('.button4').mouseenter(function() {
-        $('.button4').css({"background-image":"url(media/rope-buttonO.png)"});
+        $('.button4').css({"background-image":"url(../media/rope-buttonO.png)"});
     });
     $('.button4').mouseleave(function() {
-        $('.button4').css({"background-image":"url(media/rope-buttonC.png)"});
+        $('.button4').css({"background-image":"url(../media/rope-buttonC.png)"});
     });
 });
