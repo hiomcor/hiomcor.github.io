@@ -18,13 +18,15 @@ function parallax(){
     $(window).scroll(function(){
         var wScroll = $(this).scrollTop();
 
-        if (wScroll < 1100){
+        console.log(wScroll)
+
+        if (wScroll < 700){
             $('.right').css({'transform' : 'translate3d(0px, 0px, 0px)'});
-        }else if (wScroll >= 1100 && wScroll <2200){
-            $('.right').css({'transform' : 'translate3d(0px, -'+ ((wScroll - 1100) / 3.15) +'px, 0px)'});
+        }else if (wScroll >= 700 && wScroll <1800){
+            $('.right').css({'transform' : 'translate3d(0px, -'+ ((wScroll - 700) / 3.15) +'px, 0px)'});
             $('#news img').css({'transform' : 'translate3d(0px, 0px, 0px)'});
-        }else if (wScroll >= 2200 && wScroll < 3150){
-            $('#news img').css({'transform' : 'translate3d(0px, -'+ ((wScroll - 2200) / 1.61) +'px, 0px)'});
+        }else if (wScroll >= 1800 && wScroll < 2750){
+            $('#news img').css({'transform' : 'translate3d(0px, -'+ ((wScroll - 1800) / 1.61) +'px, 0px)'});
         }
     });
 }
