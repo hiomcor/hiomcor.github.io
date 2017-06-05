@@ -1,0 +1,287 @@
+$white: #FFFFFF
+$black: #1e1e1e
+
+$dblue: #0098d2
+$blue: 	#56caf6
+$primary: #ecf3f3
+$lblue: #adf0ff
+$orange: #ff6d52
+$peach: #ff9b82
+
+\:root
+    font-size: 20px
+a
+    text-decoration: none
+    color: $black
+    letter-spacing: .5px
+h1,h2,h3,h4
+    margin: 0
+p
+    font-family: "soleil",sans-serif
+input
+    outline: none
+    border: none
+    font-family: 'Montserrat', sans-serif
+    // font-family: "soleil",sans-serif
+button
+    border: none
+    outline: none
+    font-family: 'Montserrat', sans-serif
+    // font-family: "soleil",sans-serif
+    font-weight: 500
+
+body
+    width: 100%
+    background-color: $primary
+    font-family: 'Montserrat', sans-serif
+    // font-family: "soleil",sans-serif
+    margin: 0
+    text-rendering: optimizeLegibility
+    overflow-x: hidden
+
+.circle
+    background:
+        image: url(../../Screenshots/atto-edit-2.png)
+        size: cover
+        position: top center
+        repeat: no-repeat
+.quotes
+    background:
+        image: url(../../media/quotes.svg)
+        size: cover
+        position: center
+        repeat: no-repeat
+
+.flx
+    display: flex
+.cc
+    justify-content: center
+    align-items: center
+.sp
+    justify-content: space-between
+.a-start
+    align-items: flex-start
+.a-end
+    align-items: flex-end
+.j-end
+    justify-content: flex-end
+.j-start
+    justify-content: flex-start
+.flx-col
+    flex-direction: column
+
+.crsr
+    cursor: pointer
+    cursor: hand
+
+.container
+    width: 1200px
+.br
+    width: 100%
+    height: 150px
+    background-color: $primary
+
+.pageheader
+    width: 100%
+    height: 100px
+    background-color: $dblue
+    .container
+        display: flex
+        justify-content: space-between
+        .leftnav
+            display: flex
+            align-items: center
+            a
+                font-size: 14px
+                font-weight: 600
+                color: $white
+                transition: .3s
+            a:hover
+                color: $lblue
+            .dot
+                width: 5px
+                height: 5px
+                margin: 15px
+                border-radius: 2.5px
+                background-color: $peach
+
+        .rightnav
+            a
+            .talk
+                height: 100px
+                width: 110px
+                background-color: $orange
+                color: $white
+                font-size: 18px
+                font-weight: 700
+                letter-spacing: .5px
+                transition: .3s
+                box-shadow: 0 0 0 0 $peach
+            .talk:hover
+                box-shadow: 0 -20px 0 20px $peach
+                // background-color: $peach
+.header
+    width: 100%
+    height: 500px
+    background-color: $primary
+    .container
+        .header-left
+            max-width: 800px
+            h1
+                margin-left: 50px
+                font-size: 50px
+                font-weight: 800
+                font-kerning: normal
+                line-height: 70px
+                word-spacing: 6px
+                color: $black
+                span
+                    font-weight: 700
+
+.item
+    width: 100%
+    height: 750px
+    background-color: $primary
+    position: relative
+    .container
+        width: 1000px
+        height: 100%
+        -webkit-filter: drop-shadow( 0px 5px 10px rgba(0, 0, 0, 0.4))
+        filter: drop-shadow( 0 5px 10px rgba(0, 0, 0, 0.4))
+        .image-right
+            width: 400px
+            height: 100%
+            background-color: $orange
+            // img
+            //     width: 500px
+            //     box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.4)
+        .image-left
+            width: 400px
+            height: 100%
+            background-color: $orange
+            // img
+            //     width: 500px
+            //     box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.4)
+        .image-right::before
+            content: ""
+            position: absolute
+            top: 0
+            left: 300px
+            width: 100%
+            height: 100%
+            image-rendering: -moz-crisp-edges         /* Firefox */
+            image-rendering:   -o-crisp-edges         /* Opera */
+            image-rendering: -webkit-optimize-contrast /* Webkit (non-standard naming) */
+            image-rendering: crisp-edges
+            -ms-interpolation-mode: nearest-neighbor  /* IE (non-standard property) */
+            background:
+                image: url(../../Screenshots/joyScreen.png)
+                size: 500px
+                repeat: no-repeat
+                position: 50% 50%
+                // box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.4)
+
+            -webkit-filter: drop-shadow( 0px 5px 10px rgba(0, 0, 0, 0.4))
+            filter: drop-shadow( 0 5px 10px rgba(0, 0, 0, 0.4))
+        .image-left::before
+            content: ""
+            position: absolute
+            top: 0
+            right: 300px
+            width: 100%
+            height: 100%
+            image-rendering: -moz-crisp-edges         /* Firefox */
+            image-rendering:   -o-crisp-edges         /* Opera */
+            image-rendering: -webkit-optimize-contrast /* Webkit (non-standard naming) */
+            image-rendering: crisp-edges
+            -ms-interpolation-mode: nearest-neighbor  /* IE (non-standard property) */
+            background:
+                image: url(../../Screenshots/techco.png)
+                size: 500px
+                repeat: no-repeat
+                position: 50% 50%
+                // box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.4)
+            -webkit-filter: drop-shadow( 0px 5px 10px rgba(0, 0, 0, 0.4))
+            filter: drop-shadow( 0 5px 10px rgba(0, 0, 0, 0.4))
+        .text-container
+            width: 500px
+            height: 750px
+            background-color: $white
+            .text
+                width: 400px
+                height: 650px
+                h1
+                    margin-bottom: 30px
+                    color: $black
+                .hr
+                    height: 1px
+                    width: 300px
+                    background-color: #999
+                p
+                    color: #000
+                .buttons
+                    margin-top: auto
+                    z-index: 5
+                    button
+                        width: 140px
+                        margin-right: 20px
+
+.content5
+    width: 100%
+    height: 600px
+    background-color: $primary
+    .container
+        height: 100%
+        .nav-items
+            height: 300px
+            width: 50%
+        .contact
+            height: 300px
+            width: 50%
+            margin-left: 50px
+            h1
+                color: $white
+            input
+                height: 50px
+                width: 50%
+                padding: 0 20px
+                font-size: 14px
+                font-weight: 500
+                background-color: transparentize(black, .8)
+                color: $black
+            input::placeholder
+                color: $black
+
+button
+    height: 50px
+    width: 25%
+    font-size: 14px
+    color: $white
+    background-color: $orange
+    transition: .3s
+button:hover
+    background-color: $peach
+
+footer
+    width: 100%
+    height: 100px
+    background-color: #222
+    .container
+        align-items: center
+        .me
+            font-size: 14px
+            font-weight: 500
+            color: $white
+        .icons
+            i
+                margin-left: 15px
+                font-size: 30px
+                color: $white
+                transition: .2s
+            i:hover
+                color: $orange
+
+@media (max-width: 1310px)
+    .container
+        width: 100%
+        margin: 0 50px
