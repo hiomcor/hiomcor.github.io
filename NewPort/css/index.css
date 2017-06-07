@@ -160,7 +160,7 @@ body {
   background-color: #ecf3f3;
   position: relative; }
   .item .container {
-    width: 100rem;
+    width: 110rem;
     height: 100%;
     -webkit-filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.4));
     filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.4)); }
@@ -195,21 +195,17 @@ body {
         height: 65rem;
         margin: 5rem; }
         .item .container .text-container .text h1 {
-          margin-bottom: 30px;
+          margin-bottom: 3rem;
           color: #1e1e1e; }
         .item .container .text-container .text .hr {
           height: 1px;
-          width: 30rem;
+          width: 40rem;
           background-color: #999; }
         .item .container .text-container .text p {
           color: #000; }
         .item .container .text-container .text .buttons {
           margin-top: auto;
           z-index: 5; }
-          .item .container .text-container .text .buttons button {
-            height: 5rem;
-            width: 25%;
-            margin-right: 20px; }
           .item .container .text-container .text .buttons a {
             width: 14rem;
             height: 7rem;
@@ -220,7 +216,7 @@ body {
             font-weight: 500;
             color: #FFFFFF;
             background-color: #ff6d52;
-            transition: 0.3s; }
+            transition: background-color 0.3s; }
           .item .container .text-container .text .buttons a:first-child {
             margin-right: 20px; }
           .item .container .text-container .text .buttons a:hover {
@@ -237,15 +233,16 @@ footer {
       font-weight: 400;
       color: #FFFFFF; }
       footer .container .me span {
-        font-size: 12px;
         color: #ff6d52; }
-    footer .container .icons i {
-      margin-left: 15px;
-      font-size: 25px;
-      color: #FFFFFF;
-      transition: 0.2s; }
-    footer .container .icons i:hover {
-      color: #ff6d52; }
+    footer .container .icons {
+      flex: none; }
+      footer .container .icons i {
+        margin-left: 15px;
+        font-size: 25px;
+        color: #FFFFFF;
+        transition: 0.2s; }
+      footer .container .icons i:hover {
+        color: #ff6d52; }
 
 @media (max-width: 1310px) {
   .container {
@@ -266,5 +263,41 @@ footer {
 
   p {
     font-size: 18px; } }
+@media (max-width: 825px) {
+  :root {
+    font-size: 6px; }
+
+  h1 {
+    font-size: 28px; }
+
+  p {
+    font-size: 16px; }
+
+  .item .container .text-container .text .buttons a {
+    font-size: 12px; } }
+@media (max-width: 710px) {
+  :root {
+    font-size: 5.5px; }
+
+  h1 {
+    font-size: 24px; }
+
+  p {
+    font-size: 15px; }
+
+  .item .container .text-container .text .buttons a {
+    font-size: 11px; } }
+@media (max-width: 666px) {
+  .item .container {
+    width: 100%; }
+    .item .container .text-container {
+      width: 100%; }
+      .item .container .text-container .text {
+        width: 100%; }
+        .item .container .text-container .text .hr {
+          width: 100%; }
+
+  .hide {
+    display: none; } }
 
 /*# sourceMappingURL=index.css.map */
