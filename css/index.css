@@ -33,18 +33,6 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden; }
 
-.circle {
-  background-image: url(../../Screenshots/atto-edit-2.png);
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat; }
-
-.quotes {
-  background-image: url(../../media/quotes.svg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-
 .flx {
   display: flex; }
 
@@ -166,25 +154,25 @@ body {
     filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.4)); }
     .item .container .image-trav::before {
       left: 30rem;
-      background-image: url(../../Screenshots/joyScreen.png);
+      background-image: url(../Screenshots/joyScreen.png);
       background-size: 50rem;
       background-repeat: no-repeat;
       background-position: 50% 50%; }
     .item .container .image-tech::before {
       right: 30rem;
-      background-image: url(../../Screenshots/techco.png);
+      background-image: url(../Screenshots/techco.png);
       background-size: 50rem;
       background-repeat: no-repeat;
       background-position: 50% 50%; }
     .item .container .image-video::before {
       left: 30rem;
-      background-image: url(../../Screenshots/atto-edit-2.png);
+      background-image: url(../Screenshots/atto-edit-2.png);
       background-size: 50rem;
       background-repeat: no-repeat;
       background-position: 50% 50%; }
     .item .container .image-letter::before {
       right: 30rem;
-      background-image: url(../../Screenshots/letterS.png);
+      background-image: url(../Screenshots/letterS.png);
       background-size: 50rem;
       background-repeat: no-repeat;
       background-position: 50% 50%; }
