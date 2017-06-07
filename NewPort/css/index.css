@@ -1,5 +1,5 @@
 :root {
-  font-size: 20px; }
+  font-size: 10px; }
 
 a {
   text-decoration: none;
@@ -7,9 +7,11 @@ a {
   letter-spacing: 0.5px; }
 
 h1, h2, h3, h4 {
+  font-size: 35px;
   margin: 0; }
 
 p {
+  font-size: 20px;
   font-family: "soleil", sans-serif; }
 
 input {
@@ -133,73 +135,71 @@ body {
       .header .container .header-left h1 span {
         font-weight: 700; }
 
+.message, .item .container .image-trav::before, .item .container .image-tech::before, .item .container .image-video::before, .item .container .image-letter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  -webkit-filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.4)); }
+
+.image-float, .item .container .image-trav, .item .container .image-tech, .item .container .image-video, .item .container .image-letter {
+  width: 40rem;
+  height: 100%;
+  background-color: #ff6d52; }
+
 .item {
   width: 100%;
-  height: 750px;
+  height: 75rem;
   background-color: #ecf3f3;
   position: relative; }
   .item .container {
-    width: 1000px;
+    width: 100rem;
     height: 100%;
     -webkit-filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.4));
     filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.4)); }
-    .item .container .image-right {
-      width: 400px;
-      height: 100%;
-      background-color: #ff6d52; }
-    .item .container .image-left {
-      width: 400px;
-      height: 100%;
-      background-color: #ff6d52; }
-    .item .container .image-right::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 300px;
-      width: 100%;
-      height: 100%;
-      image-rendering: -moz-crisp-edges;
-      image-rendering: -o-crisp-edges;
-      image-rendering: -webkit-optimize-contrast;
-      image-rendering: crisp-edges;
-      -ms-interpolation-mode: nearest-neighbor;
+    .item .container .image-trav::before {
+      left: 30rem;
       background-image: url(../../Screenshots/joyScreen.png);
-      background-size: 500px;
+      background-size: 50rem;
       background-repeat: no-repeat;
-      background-position: 50% 50%;
-      -webkit-filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.4));
-      filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.4)); }
-    .item .container .image-left::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 300px;
-      width: 100%;
-      height: 100%;
-      image-rendering: -moz-crisp-edges;
-      image-rendering: -o-crisp-edges;
-      image-rendering: -webkit-optimize-contrast;
-      image-rendering: crisp-edges;
-      -ms-interpolation-mode: nearest-neighbor;
+      background-position: 50% 50%; }
+    .item .container .image-tech::before {
+      right: 30rem;
       background-image: url(../../Screenshots/techco.png);
-      background-size: 500px;
+      background-size: 50rem;
       background-repeat: no-repeat;
-      background-position: 50% 50%;
-      -webkit-filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.4));
-      filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.4)); }
+      background-position: 50% 50%; }
+    .item .container .image-video::before {
+      left: 30rem;
+      background-image: url(../../Screenshots/atto-edit-2.png);
+      background-size: 50rem;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+    .item .container .image-letter::before {
+      right: 30rem;
+      background-image: url(../../Screenshots/letterS.png);
+      background-size: 50rem;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
     .item .container .text-container {
-      width: 500px;
-      height: 750px;
       background-color: #FFFFFF; }
       .item .container .text-container .text {
-        width: 400px;
-        height: 650px; }
+        width: 40rem;
+        height: 65rem;
+        margin: 5rem; }
         .item .container .text-container .text h1 {
           margin-bottom: 30px;
           color: #1e1e1e; }
         .item .container .text-container .text .hr {
           height: 1px;
-          width: 300px;
+          width: 30rem;
           background-color: #999; }
         .item .container .text-container .text p {
           color: #000; }
@@ -207,45 +207,24 @@ body {
           margin-top: auto;
           z-index: 5; }
           .item .container .text-container .text .buttons button {
-            width: 140px;
+            height: 5rem;
+            width: 25%;
             margin-right: 20px; }
-
-.content5 {
-  width: 100%;
-  height: 600px;
-  background-color: #ecf3f3; }
-  .content5 .container {
-    height: 100%; }
-    .content5 .container .nav-items {
-      height: 300px;
-      width: 50%; }
-    .content5 .container .contact {
-      height: 300px;
-      width: 50%;
-      margin-left: 50px; }
-      .content5 .container .contact h1 {
-        color: #FFFFFF; }
-      .content5 .container .contact input {
-        height: 50px;
-        width: 50%;
-        padding: 0 20px;
-        font-size: 14px;
-        font-weight: 500;
-        background-color: rgba(0, 0, 0, 0.2);
-        color: #1e1e1e; }
-      .content5 .container .contact input::placeholder {
-        color: #1e1e1e; }
-
-button {
-  height: 50px;
-  width: 25%;
-  font-size: 14px;
-  color: #FFFFFF;
-  background-color: #ff6d52;
-  transition: 0.3s; }
-
-button:hover {
-  background-color: #ff9b82; }
+          .item .container .text-container .text .buttons a {
+            width: 14rem;
+            height: 7rem;
+            width: 25%;
+            padding: 1rem;
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #FFFFFF;
+            background-color: #ff6d52;
+            transition: 0.3s; }
+          .item .container .text-container .text .buttons a:first-child {
+            margin-right: 20px; }
+          .item .container .text-container .text .buttons a:hover {
+            background-color: #ff9b82; }
 
 footer {
   width: 100%;
@@ -254,12 +233,15 @@ footer {
   footer .container {
     align-items: center; }
     footer .container .me {
-      font-size: 14px;
-      font-weight: 500;
+      font-size: 11px;
+      font-weight: 400;
       color: #FFFFFF; }
+      footer .container .me span {
+        font-size: 12px;
+        color: #ff6d52; }
     footer .container .icons i {
       margin-left: 15px;
-      font-size: 30px;
+      font-size: 25px;
       color: #FFFFFF;
       transition: 0.2s; }
     footer .container .icons i:hover {
@@ -269,5 +251,20 @@ footer {
   .container {
     width: 100%;
     margin: 0 50px; } }
+@media (max-width: 1200px) {
+  :root {
+    font-size: 9px; } }
+@media (max-width: 1120px) {
+  :root {
+    font-size: 8px; } }
+@media (max-width: 966px) {
+  :root {
+    font-size: 7px; }
+
+  h1 {
+    font-size: 30px; }
+
+  p {
+    font-size: 18px; } }
 
 /*# sourceMappingURL=index.css.map */

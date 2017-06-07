@@ -9,14 +9,16 @@ $orange: #ff6d52
 $peach: #ff9b82
 
 \:root
-    font-size: 20px
+    font-size: 10px
 a
     text-decoration: none
     color: $black
     letter-spacing: .5px
 h1,h2,h3,h4
+    font-size: 35px
     margin: 0
 p
+    font-size: 20px
     font-family: "soleil",sans-serif
 input
     outline: none
@@ -137,85 +139,95 @@ body
                 color: $black
                 span
                     font-weight: 700
-
+.message
+    content: ""
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    image-rendering: -moz-crisp-edges         /* Firefox */
+    image-rendering:   -o-crisp-edges         /* Opera */
+    image-rendering: -webkit-optimize-contrast /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges
+    -ms-interpolation-mode: nearest-neighbor  /* IE (non-standard property) */
+    -webkit-filter: drop-shadow( 0px 5px 10px rgba(0, 0, 0, 0.4))
+    filter: drop-shadow( 0 5px 10px rgba(0, 0, 0, 0.4))
+.image-float
+    width: 40rem
+    height: 100%
+    background-color: $orange
 .item
     width: 100%
-    height: 750px
+    height: 75rem
     background-color: $primary
     position: relative
     .container
-        width: 1000px
+        width: 100rem
         height: 100%
         -webkit-filter: drop-shadow( 0px 5px 10px rgba(0, 0, 0, 0.4))
         filter: drop-shadow( 0 5px 10px rgba(0, 0, 0, 0.4))
-        .image-right
-            width: 400px
-            height: 100%
-            background-color: $orange
+        .image-trav
+            @extend .image-float
+        .image-tech
+            @extend .image-float
             // img
             //     width: 500px
             //     box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.4)
-        .image-left
-            width: 400px
-            height: 100%
-            background-color: $orange
-            // img
-            //     width: 500px
-            //     box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.4)
-        .image-right::before
-            content: ""
-            position: absolute
-            top: 0
-            left: 300px
-            width: 100%
-            height: 100%
-            image-rendering: -moz-crisp-edges         /* Firefox */
-            image-rendering:   -o-crisp-edges         /* Opera */
-            image-rendering: -webkit-optimize-contrast /* Webkit (non-standard naming) */
-            image-rendering: crisp-edges
-            -ms-interpolation-mode: nearest-neighbor  /* IE (non-standard property) */
+        .image-trav::before
+            @extend .message
+            left: 30rem
             background:
                 image: url(../../Screenshots/joyScreen.png)
-                size: 500px
+                size: 50rem
                 repeat: no-repeat
                 position: 50% 50%
-                // box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.4)
-
-            -webkit-filter: drop-shadow( 0px 5px 10px rgba(0, 0, 0, 0.4))
-            filter: drop-shadow( 0 5px 10px rgba(0, 0, 0, 0.4))
-        .image-left::before
-            content: ""
-            position: absolute
-            top: 0
-            right: 300px
-            width: 100%
-            height: 100%
-            image-rendering: -moz-crisp-edges         /* Firefox */
-            image-rendering:   -o-crisp-edges         /* Opera */
-            image-rendering: -webkit-optimize-contrast /* Webkit (non-standard naming) */
-            image-rendering: crisp-edges
-            -ms-interpolation-mode: nearest-neighbor  /* IE (non-standard property) */
+        .image-tech::before
+            @extend .message
+            right: 30rem
             background:
                 image: url(../../Screenshots/techco.png)
-                size: 500px
+                size: 50rem
                 repeat: no-repeat
                 position: 50% 50%
                 // box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.4)
-            -webkit-filter: drop-shadow( 0px 5px 10px rgba(0, 0, 0, 0.4))
-            filter: drop-shadow( 0 5px 10px rgba(0, 0, 0, 0.4))
+        .image-video
+            @extend .image-float
+        .image-letter
+            @extend .image-float
+            // img
+            //     width: 500px
+            //     box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.4)
+        .image-video::before
+            @extend .message
+            left: 30rem
+            background:
+                image: url(../../Screenshots/atto-edit-2.png)
+                size: 50rem
+                repeat: no-repeat
+                position: 50% 50%
+        .image-letter::before
+            @extend .message
+            right: 30rem
+            background:
+                image: url(../../Screenshots/letterS.png)
+                size: 50rem
+                repeat: no-repeat
+                position: 50% 50%
+                // box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.4)
         .text-container
-            width: 500px
-            height: 750px
+            // width: 500px
+            // height: 750px
             background-color: $white
             .text
-                width: 400px
-                height: 650px
+                width: 40rem
+                height: 65rem
+                margin: 5rem
                 h1
                     margin-bottom: 30px
                     color: $black
                 .hr
                     height: 1px
-                    width: 300px
+                    width: 30rem
                     background-color: #999
                 p
                     color: #000
@@ -223,45 +235,50 @@ body
                     margin-top: auto
                     z-index: 5
                     button
-                        width: 140px
+                        // width: 140px
+                        height: 5rem
+                        width: 25%
                         margin-right: 20px
-
-.content5
-    width: 100%
-    height: 600px
-    background-color: $primary
-    .container
-        height: 100%
-        .nav-items
-            height: 300px
-            width: 50%
-        .contact
-            height: 300px
-            width: 50%
-            margin-left: 50px
-            h1
-                color: $white
-            input
-                height: 50px
-                width: 50%
-                padding: 0 20px
-                font-size: 14px
-                font-weight: 500
-                background-color: transparentize(black, .8)
-                color: $black
-            input::placeholder
-                color: $black
-
-button
-    height: 50px
-    width: 25%
-    font-size: 14px
-    color: $white
-    background-color: $orange
-    transition: .3s
-button:hover
-    background-color: $peach
-
+                    a
+                        width: 14rem
+                        height: 7rem
+                        width: 25%
+                        padding: 1rem
+                        font-family: 'Montserrat', sans-serif
+                        font-size: 14px
+                        font-weight: 500
+                        color: $white
+                        background-color: $orange
+                        transition: .3s
+                    a:first-child
+                        margin-right: 20px
+                    a:hover
+                        background-color: $peach
+// .content5
+//     width: 100%
+//     height: 600px
+//     background-color: $primary
+//     .container
+//         height: 100%
+//         .nav-items
+//             height: 300px
+//             width: 50%
+//         .contact
+//             height: 300px
+//             width: 50%
+//             margin-left: 50px
+//             h1
+//                 color: $white
+//             input
+//                 height: 50px
+//                 width: 50%
+//                 padding: 0 20px
+//                 font-size: 14px
+//                 font-weight: 500
+//                 background-color: transparentize(black, .8)
+//                 color: $black
+//             input::placeholder
+//                 color: $black
 footer
     width: 100%
     height: 100px
@@ -269,13 +286,16 @@ footer
     .container
         align-items: center
         .me
-            font-size: 14px
-            font-weight: 500
+            font-size: 11px
+            font-weight: 400
             color: $white
+            span
+                font-size: 12px
+                color: $orange
         .icons
             i
                 margin-left: 15px
-                font-size: 30px
+                font-size: 25px
                 color: $white
                 transition: .2s
             i:hover
@@ -285,3 +305,23 @@ footer
     .container
         width: 100%
         margin: 0 50px
+
+@media (max-width: 1200px)
+    // .item
+    //     .container
+    //         width: 100%
+    //         margin: 0 200px
+    //         .text-container
+    //             width: 400px
+    \:root
+        font-size: 9px
+@media (max-width: 1120px)
+    \:root
+        font-size: 8px
+@media (max-width: 966px)
+    \:root
+        font-size: 7px
+    h1
+        font-size: 30px
+    p
+        font-size: 18px
