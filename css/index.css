@@ -70,42 +70,6 @@ body {
   height: 150px;
   background-color: #ecf3f3; }
 
-.pageheader {
-  width: 100%;
-  height: 100px;
-  background-color: #0098d2; }
-  .pageheader .container {
-    display: flex;
-    justify-content: space-between; }
-    .pageheader .container .leftnav {
-      display: flex;
-      align-items: center; }
-      .pageheader .container .leftnav a {
-        font-size: 14px;
-        font-weight: 600;
-        color: #FFFFFF;
-        transition: 0.3s; }
-      .pageheader .container .leftnav a:hover {
-        color: #adf0ff; }
-      .pageheader .container .leftnav .dot {
-        width: 5px;
-        height: 5px;
-        margin: 15px;
-        border-radius: 2.5px;
-        background-color: #ff9b82; }
-    .pageheader .container .rightnav .talk {
-      height: 100px;
-      width: 110px;
-      background-color: #ff6d52;
-      color: #FFFFFF;
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      transition: 0.3s;
-      box-shadow: 0 0 0 0 #ff9b82; }
-    .pageheader .container .rightnav .talk:hover {
-      box-shadow: 0 -20px 0 20px #ff9b82; }
-
 .header {
   width: 100%;
   height: 500px;

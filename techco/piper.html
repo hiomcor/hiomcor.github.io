@@ -10,6 +10,13 @@
 </head>
 <body>
 
+<div class="filter">
+    <a href="">Product</a>
+    <a href="">Pricing</a>
+    <a href="">Customers</a>
+    <a href="">Enterprise</a>
+</div>
+
 <div class="header-hero">
     <div class="container">
         <div class="logo">
@@ -24,10 +31,9 @@
             <div class="nav-item crsr">Customers</div>
             <div class="break">|</div>
             <div class="nav-item crsr">Enterprise</div>
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+            <div id="toggle" class="crsr">
+                <input type="checkbox" id="burger" class="crsr">
+                <span></span>
             </div>
         </div>
     </div>
@@ -46,19 +52,19 @@
 <div class="company-bar">
     <div class="container">
         <div class="company-item">
-            <img class="hbo" src="../media/svgs/HBO_logo2.svg" alt="">
+            <img class="hbo" src="../media/svgs/HBO_logo2.svg" alt="HBO Logo">
         </div>
         <div class="company-item">
-            <img src="../media/svgs/McDonald's_Golden_Arches2.svg" alt="">
+            <img src="../media/svgs/McDonald's_Golden_Arches2.svg" alt="McDonalds Logo">
         </div>
         <div class="company-item">
-            <img class="ama" src="../media/svgs/Amazon_logo_plain2.svg" alt="">
+            <img class="ama" src="../media/svgs/Amazon_logo_plain2.svg" alt="Amazon Logo">
         </div>
         <div class="company-item">
-            <img class="nbc" src="../media/svgs/NBC_logo2.svg" alt="">
+            <img class="nbc" src="../media/svgs/NBC_logo2.svg" alt="NBC Logo">
         </div>
         <div class="company-item">
-            <img src="../media/svgs/Uniqlo_logo2.svg" alt="">
+            <img src="../media/svgs/UNIQLO_logo2.svg" alt="Uniqlo Logo">
         </div>
     </div>
 </div>
@@ -80,7 +86,7 @@
 <div class="customer flx-cc">
     <div class="container">
         <h1>What Customers are Saying About Us</h1>
-        <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis lectus a turpis scelerisque egestas. In feugiat dui sed sem ullamcorper dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</i>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis lectus a turpis scelerisque egestas. In feugiat dui sed sem ullamcorper dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
         <div class="avatar-container">
             <div class="avatar"></div>
             <h1>Customer</h1>
@@ -109,7 +115,7 @@
         <p>Dive in with our 14-day trial - No credit card required.</p>
         <div class="email">
             <input type="text" class="email-input flx-cc white" placeholder="Your Email Address" spellcheck="false">
-            <button type="Submit" name="button flx-cc">SUBMIT</button>
+            <button type="Submit" class="crsr" name="button">SUBMIT</button>
         </div>
     </div>
 </div>
@@ -148,6 +154,8 @@
 </footer>
 
 <script src="https://use.fontawesome.com/f8981bede1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="techco.js" charset="utf-8"></script>
 
 </body>
 </html>

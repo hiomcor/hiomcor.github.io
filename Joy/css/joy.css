@@ -43,7 +43,9 @@ h1, h2, h3, h4, p, a {
     margin: 20px 0;
     padding: 0 20px;
     transition: 0.2s;
-    box-shadow: 0 0 0 0 #fefefe; }
+    box-shadow: 0 0 0 0 #fefefe;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
   .filter a:hover {
     box-shadow: 6px 0 0 0 #fefefe; }
 
@@ -104,7 +106,9 @@ h1, h2, h3, h4, p, a {
             font-weight: 500;
             color: #fefefe;
             transition: 0.2s;
-            box-shadow: 0 0 0 0 #fefefe; }
+            box-shadow: 0 0 0 0 #fefefe;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden; }
           .hero .grad-bar .container .header .nav a:hover, .hero .grad-bar .container .header .nav a:active, .hero .grad-bar .container .header .nav a:focus {
             box-shadow: 0 2px 0 0 #fefefe; }
         .hero .grad-bar .container .header .login {
@@ -115,7 +119,9 @@ h1, h2, h3, h4, p, a {
           font-size: 16px;
           font-weight: 500;
           box-shadow: 0 0 0 0 #fefefe;
-          transition: 0.2s; }
+          transition: 0.2s;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
         .hero .grad-bar .container .header .login:hover {
           box-shadow: 0 2px 0 0 #fefefe; }
       .hero .grad-bar .container .hr {
@@ -493,11 +499,12 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 0 0.5rem; }
+  margin: 0 0.5rem;
+  border: 2px solid black; }
   .search-desc h1 {
     font-size: 0.5rem;
     margin: 0.3rem 0 0 0;
-    font-weight: 600; }
+    font-weight: 500; }
   .search-desc p {
     font-size: 0.5rem;
     margin: 0 0 0.3rem 0; }
@@ -516,7 +523,7 @@ footer {
 
   :root {
     font-size: 22px; } }
-@media (max-width: 630px) {
+@media (max-width: 666px) {
   .hero .grad-bar .container .header .nav a {
     display: none; }
   .hero .grad-bar .container .header .login {

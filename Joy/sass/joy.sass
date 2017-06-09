@@ -53,6 +53,8 @@ h1,h2,h3,h4,p,a
         padding: 0 20px
         transition: .2s
         box-shadow: 0 0 0 0 $white
+        -webkit-backface-visibility: hidden /* Chrome, Safari, Opera */
+        backface-visibility: hidden
     a:hover
         box-shadow: 6px 0 0 0 $white
 .flex
@@ -112,6 +114,8 @@ h1,h2,h3,h4,p,a
                         color: $white
                         transition: .2s
                         box-shadow: 0 0 0 0 $white
+                        -webkit-backface-visibility: hidden /* Chrome, Safari, Opera */
+                        backface-visibility: hidden
 
                     a:hover,a:active,a:focus
                         box-shadow: 0 2px 0 0 $white
@@ -125,6 +129,8 @@ h1,h2,h3,h4,p,a
                     font-weight: 500
                     box-shadow: 0 0 0 0 $white
                     transition: .2s
+                    -webkit-backface-visibility: hidden /* Chrome, Safari, Opera */
+                    backface-visibility: hidden
                 .login:hover
                     box-shadow: 0 2px 0 0 $white
                 // .burger
@@ -573,7 +579,7 @@ footer
     \:root
         font-size: 22px
 
-@media (max-width: 630px)
+@media (max-width: 666px)
     .hero
         .grad-bar
             .container
