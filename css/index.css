@@ -84,8 +84,6 @@ body {
       line-height: 70px;
       word-spacing: 6px;
       color: #1e1e1e; }
-      .header .container .header-left h1 span {
-        font-weight: 700; }
 
 .message, .item .container .image-trav::before, .item .container .image-tech::before, .item .container .image-video::before, .item .container .image-letter::before {
   content: "";
@@ -118,25 +116,25 @@ body {
     filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.4)); }
     .item .container .image-trav::before {
       left: 30rem;
-      background-image: url(../Screenshots/joyScreen.png);
+      background-image: url(../Screenshots/joy.jpg);
       background-size: 50rem;
       background-repeat: no-repeat;
       background-position: 50% 50%; }
     .item .container .image-tech::before {
       right: 30rem;
-      background-image: url(../Screenshots/techco.png);
+      background-image: url(../Screenshots/techco.jpg);
       background-size: 50rem;
       background-repeat: no-repeat;
       background-position: 50% 50%; }
     .item .container .image-video::before {
       left: 30rem;
-      background-image: url(../Screenshots/atto-edit-2.png);
+      background-image: url(../Screenshots/atto-edit-2.jpg);
       background-size: 50rem;
       background-repeat: no-repeat;
       background-position: 50% 50%; }
     .item .container .image-letter::before {
       right: 30rem;
-      background-image: url(../Screenshots/letterS.png);
+      background-image: url(../Screenshots/letterboxd.jpg);
       background-size: 50rem;
       background-repeat: no-repeat;
       background-position: 50% 50%; }

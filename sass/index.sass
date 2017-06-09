@@ -69,46 +69,6 @@ body
     width: 100%
     height: 150px
     background-color: $primary
-
-// .pageheader
-//     width: 100%
-//     height: 100px
-//     background-color: $dblue
-//     .container
-//         display: flex
-//         justify-content: space-between
-//         .leftnav
-//             display: flex
-//             align-items: center
-//             a
-//                 font-size: 14px
-//                 font-weight: 600
-//                 color: $white
-//                 transition: .3s
-//             a:hover
-//                 color: $lblue
-//             .dot
-//                 width: 5px
-//                 height: 5px
-//                 margin: 15px
-//                 border-radius: 2.5px
-//                 background-color: $peach
-//
-//         .rightnav
-//             a
-//             .talk
-//                 height: 100px
-//                 width: 110px
-//                 background-color: $orange
-//                 color: $white
-//                 font-size: 18px
-//                 font-weight: 700
-//                 letter-spacing: .5px
-//                 transition: .3s
-//                 box-shadow: 0 0 0 0 $peach
-//             .talk:hover
-//                 box-shadow: 0 -20px 0 20px $peach
-//                 // background-color: $peach
 .header
     width: 100%
     height: 500px
@@ -124,8 +84,6 @@ body
                 line-height: 70px
                 word-spacing: 6px
                 color: $black
-                span
-                    font-weight: 700
 .message
     content: ""
     position: absolute
@@ -157,14 +115,11 @@ body
             @extend .image-float
         .image-tech
             @extend .image-float
-            // img
-            //     width: 500px
-            //     box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.4)
         .image-trav::before
             @extend .message
             left: 30rem
             background:
-                image: url(../Screenshots/joyScreen.png)
+                image: url(../Screenshots/joy.jpg)
                 size: 50rem
                 repeat: no-repeat
                 position: 50% 50%
@@ -172,23 +127,19 @@ body
             @extend .message
             right: 30rem
             background:
-                image: url(../Screenshots/techco.png)
+                image: url(../Screenshots/techco.jpg)
                 size: 50rem
                 repeat: no-repeat
                 position: 50% 50%
-                // box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.4)
         .image-video
             @extend .image-float
         .image-letter
             @extend .image-float
-            // img
-            //     width: 500px
-            //     box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.4)
         .image-video::before
             @extend .message
             left: 30rem
             background:
-                image: url(../Screenshots/atto-edit-2.png)
+                image: url(../Screenshots/atto-edit-2.jpg)
                 size: 50rem
                 repeat: no-repeat
                 position: 50% 50%
@@ -196,11 +147,11 @@ body
             @extend .message
             right: 30rem
             background:
-                image: url(../Screenshots/letterS.png)
+                image: url(../Screenshots/letterboxd.jpg)
                 size: 50rem
                 repeat: no-repeat
                 position: 50% 50%
-                // box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.4)
+
         .text-container
             background-color: $white
             .text
@@ -232,31 +183,7 @@ body
                         margin-right: 20px
                     a:hover
                         background-color: $peach
-// .content5
-//     width: 100%
-//     height: 600px
-//     background-color: $primary
-//     .container
-//         height: 100%
-//         .nav-items
-//             height: 300px
-//             width: 50%
-//         .contact
-//             height: 300px
-//             width: 50%
-//             margin-left: 50px
-//             h1
-//                 color: $white
-//             input
-//                 height: 50px
-//                 width: 50%
-//                 padding: 0 20px
-//                 font-size: 14px
-//                 font-weight: 500
-//                 background-color: transparentize(black, .8)
-//                 color: $black
-//             input::placeholder
-//                 color: $black
+
 footer
     width: 100%
     height: 100px
@@ -285,12 +212,6 @@ footer
         margin: 0 50px
 
 @media (max-width: 1200px)
-    // .item
-    //     .container
-    //         width: 100%
-    //         margin: 0 200px
-    //         .text-container
-    //             width: 400px
     \:root
         font-size: 9px
 @media (max-width: 1120px)

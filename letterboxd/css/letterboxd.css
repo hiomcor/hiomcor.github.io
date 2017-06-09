@@ -55,9 +55,10 @@ button, input {
         font-weight: 400;
         color: #fefefe;
         cursor: pointer;
+        padding: 5px 0;
         transition: 0.2s; }
       .header .container .nav a:hover {
-        box-shadow: 0 3px 0 0 #fefefe; }
+        box-shadow: 0 2px 0 0 #fefefe; }
       .header .container .nav button {
         margin-left: 20px;
         width: 120px;
