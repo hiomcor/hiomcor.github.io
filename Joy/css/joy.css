@@ -61,7 +61,7 @@ h1, h2, h3, h4, p, a {
 .hero {
   width: 100%;
   height: 800px;
-  background-image: url(../../media/hero.jpg);
+  background-image: url(../../media/heroJoy.jpg);
   background-size: cover;
   background-position: 0% 30%;
   display: flex;
