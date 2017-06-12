@@ -93,7 +93,7 @@ h1, h2, h3, h4, p, a {
           display: flex;
           align-items: center; }
           .hero .grad-bar .container .header .logo img {
-            height: 35px;
+            height: 30px;
             margin-right: 10px; }
         .hero .grad-bar .container .header .nav {
           display: flex; }

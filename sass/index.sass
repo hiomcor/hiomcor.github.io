@@ -113,8 +113,6 @@ body
         filter: drop-shadow( 0 5px 10px rgba(0, 0, 0, 0.4))
         .image-trav
             @extend .image-float
-        .image-tech
-            @extend .image-float
         .image-trav::before
             @extend .message
             left: 30rem
@@ -123,6 +121,8 @@ body
                 size: 50rem
                 repeat: no-repeat
                 position: 50% 50%
+        .image-tech
+            @extend .image-float
         .image-tech::before
             @extend .message
             right: 30rem
@@ -131,18 +131,8 @@ body
                 size: 50rem
                 repeat: no-repeat
                 position: 50% 50%
-        .image-video
-            @extend .image-float
         .image-letter
             @extend .image-float
-        .image-video::before
-            @extend .message
-            left: 30rem
-            background:
-                image: url(../Screenshots/atto-edit-2.jpg)
-                size: 50rem
-                repeat: no-repeat
-                position: 50% 50%
         .image-letter::before
             @extend .message
             right: 30rem
@@ -151,6 +141,17 @@ body
                 size: 50rem
                 repeat: no-repeat
                 position: 50% 50%
+        .image-job
+            @extend .image-float
+        .image-job::before
+            @extend .message
+            left: 30rem
+            background:
+                image: url(../Screenshots/job.jpg)
+                size: 50rem
+                repeat: no-repeat
+                position: 50% 50%
+
 
         .text-container
             background-color: $white
@@ -161,6 +162,7 @@ body
                 h1
                     margin-bottom: 3rem
                     color: $black
+                    font-weight: 600
                 .hr
                     height: 1px
                     width: 40rem
@@ -195,6 +197,12 @@ footer
             font-weight: 400
             color: $white
             span
+                color: $orange
+        .contact
+            font-size: 10px
+            color: $white
+            span
+                font-size: 11px
                 color: $orange
         .icons
             flex: none
@@ -282,3 +290,5 @@ footer
     .container
         width: 100%
         margin: 0 30px
+    p
+        font-size: 14px

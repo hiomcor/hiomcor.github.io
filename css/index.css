@@ -85,7 +85,7 @@ body {
       word-spacing: 6px;
       color: #1e1e1e; }
 
-.message, .item .container .image-trav::before, .item .container .image-tech::before, .item .container .image-video::before, .item .container .image-letter::before {
+.message, .item .container .image-trav::before, .item .container .image-tech::before, .item .container .image-letter::before, .item .container .image-job::before {
   content: "";
   position: absolute;
   top: 0;
@@ -99,7 +99,7 @@ body {
   -webkit-filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.4));
   filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.4)); }
 
-.image-float, .item .container .image-trav, .item .container .image-tech, .item .container .image-video, .item .container .image-letter {
+.image-float, .item .container .image-trav, .item .container .image-tech, .item .container .image-letter, .item .container .image-job {
   width: 40rem;
   height: 100%;
   background-color: #ff6d52; }
@@ -126,15 +126,15 @@ body {
       background-size: 50rem;
       background-repeat: no-repeat;
       background-position: 50% 50%; }
-    .item .container .image-video::before {
-      left: 30rem;
-      background-image: url(../Screenshots/atto-edit-2.jpg);
-      background-size: 50rem;
-      background-repeat: no-repeat;
-      background-position: 50% 50%; }
     .item .container .image-letter::before {
       right: 30rem;
       background-image: url(../Screenshots/letterboxd.jpg);
+      background-size: 50rem;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+    .item .container .image-job::before {
+      left: 30rem;
+      background-image: url(../Screenshots/job.jpg);
       background-size: 50rem;
       background-repeat: no-repeat;
       background-position: 50% 50%; }
@@ -146,7 +146,8 @@ body {
         margin: 5rem; }
         .item .container .text-container .text h1 {
           margin-bottom: 3rem;
-          color: #1e1e1e; }
+          color: #1e1e1e;
+          font-weight: 600; }
         .item .container .text-container .text .hr {
           height: 1px;
           width: 40rem;
@@ -181,6 +182,12 @@ footer {
       font-weight: 400;
       color: #FFFFFF; }
       footer .container .me span {
+        color: #ff6d52; }
+    footer .container .contact {
+      font-size: 10px;
+      color: #FFFFFF; }
+      footer .container .contact span {
+        font-size: 11px;
         color: #ff6d52; }
     footer .container .icons {
       flex: none; }
@@ -261,6 +268,9 @@ footer {
 @media (max-width: 475px) {
   .container {
     width: 100%;
-    margin: 0 30px; } }
+    margin: 0 30px; }
+
+  p {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=index.css.map */
